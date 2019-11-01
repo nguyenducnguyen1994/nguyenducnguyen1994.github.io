@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lý do khiến Flutter sẽ thay đổi bộ mặt của Mobile Development</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+		<h1 class="margin-bottom">Lý do khiến Flutter sẽ thay đổi bộ mặt của Mobile Development</h1>
+		<div class="margin-bottom">01 tháng 11, 2019</div>
+		
+		<div class="flutter-laptrinh">
+			<a href="https://techmaster.vn/posts?keyword=&category=&author=" style="text-decoration: none;">
+				<span class="badge category">Flutter</span>
+			</a>
+			<a href="https://techmaster.vn/posts?keyword=&category=bksokq451cobrst96vu0" style="text-decoration: none;">
+				<span class="badge category">Lập trình</span>
+			</a>
+		</div>
+
+		<div class="noi-dung">
+			<p>Nếu bạn là một Android developer, có thể bạn đã nghe nói về <a href="https://techmaster.vn/khoa-hoc/j86/lap-trinh-di-dong-da-nen-tang-android-ios-su-dung-flutter">Flutter</a>. Nó khá mới, được cho là một framework đơn giản được thiết kế để tạo các native app (ứng dụng gốc) đa nền tảng. Flutter không phải là sản phẩm đầu tiên thuộc loại này, nhưng nó lại được Google sử dụng — điều này đem lại những sự tin cậy nhất định. Bất chấp sự dè dặt ban đầu của tôi khi nghe về nó, tôi quyết định thử - và nó đã thay đổi đáng kể quan điểm của tôi về Mobile Development chỉ trong vòng 1 tuần. Đây là những gì tôi đã học được.
+			</p>
+			<p>Cách đây đúng 1 năm, tôi đã pulish App Android đầu tiên của mình trên PlayStore. Ứng dụng ấy khá cơ bản về kiến trúc và quy ước mã hóa; đó là dự án open source lớn đầu tiên của tôi, cho thấy, và tôi đã đi một chặng đường dài với Android. Tôi làm việc tại một công ty và dành thời gian cho khá nhiều dự án với các công nghệ và kiến trúc khác nhau, bao gồm Kotlin, Dagger, RxJava, MVP, MVVM, VIPER,… những thứ thực sự đã giúp tôi rất nhiều trong quá trình phát triển ứng dụng Android.
+			</p>
+			<p>Như tôi đã nói trước đó, trong vài tháng qua, tôi đã cảm thấy thất vọng với Framework của Adroid, đặc biệt là về tính không tương thích và không trực quan khi xây dựng app. Và khi mọi thứ đã tốt hơn rất nhiều với Kotlin và các tool khác như Databinding thì toàn cảnh tình trạng của Android development vẫn giống như việc dán một miếng băng cá nhân nhỏ bé lên một vết thương quá lớn để có thể lành. Do đó, tôi bắt đầu cân nhắc về Flutter.
+			</p>
+			<p>Tôi đã bắt đầu sử dụng Flutter vài tuần trước, khi nó bước vào giai đoạn thử nghiệm. Tôi đã xem tài liệu chính thức (nhân tiện thì phải nói là chúng rất hữu ích) và bắt đầu xem qua các code lab và hướng dẫn. Nhanh chóng, tôi bắt đầu hiểu những ý tưởng cơ bản đằng sau Flutter, và quyết định tự mình thử nó để xem liệu tôi có thể đưa nó vào sử dụng không. Tôi bắt đầu suy nghĩ về loại dự án nào tôi nên làm trước tiên và tôi quyết định tạo lại ứng dụng Android đầu tiên của mình. Đây có vẻ là một lựa chọn thích hợp vì nó sẽ cho phép tôi so sánh cả hai sự “nỗ lực đầu tiên” với hai khung tương ứng, trong khi không chú ý quá nhiều đến kiến trúc ứng dụng,… Nó đơn thuần là việc tìm hiểu SDK (Software Development Kit — Bộ công cụ phát triển phần mềm) bằng cách xây dựng một bộ tính năng đã xác định.
+			</p>
+			<p>Tôi đã bắt đầu bằng cách tạo các network request, phân tích cú pháp JSON và làm quen với mô hình đồng thời đơn luồng của Dart ( <strong>Dart’s single-threaded concurrency model</strong> — tôi nghĩ nó có thể là chủ đề của một bài đăng khác của tôi). Tôi bắt đầu và chạy một vài movie data trong ứng dụng của mình, sau đó bắt đầu tạo layout cho danh sách và các items của danh sách. Tạo layout trong Flutter cũng dễ như mở rộng các lớp của Stateless hoặc Stateful Widget và ghi đè một vài phương thức. Tôi sẽ so sánh sự khác biệt trong việc xây dựng các tính năng đó giữa Flutter và Android. Hãy bắt đầu với các bước cần thiết để xây dựng danh sách này trong Android:
+			</p>
+			<ol>
+				<li>Tạo 1 file list-item layout trong XML</li>
+				<li>Tạo 1 adapter để điền item-views và đặt dữ liệu</li>
+				<li>Tạo layout cho danh sách (có thể trong activity hoặc Fragment)</li>
+				<li>Điền list layout trong Fragment hoặc Activity</li>
+				<li>Tạo các phiên bản của Adapter, trình quản lý layout trong Fragment/Activity</li>
+				<li>Tải xuống dữ liệu phim từ mạng trên một luồng nền</li>
+				<li>Quay lại trang chính, đặt các mục trong Adapter</li>
+				<li>Bây giờ chúng ta cần suy nghĩ về các chi tiết như save, restore trạng thái danh sách.</li>
+				<li>Danh sách sẽ được mở rộng nhiều hơn nữa…</li>
+			</ol>
+			<p>Điều này tất nhiên là tẻ nhạt. Và nếu bạn nghĩ về việc xây dựng các tính năng này là một task khá phổ biến thì - nghiêm túc mà nói , đây đúng thật không phải là một trường hợp hiếm thấy mà bạn sẽ gặp - Bạn có thể bắt gặp bản thân tự hỏi rằng: thực sự không có cách nào tốt hơn để làm nó sao? Một cách ít bị lỗi hơn, ít phải dùng những đoạn code rườm rà (boilderplate code) và tăng tốc độ phát triển ứng dụng? Đây là thứ mà Flutter khai thác.
+			</p>
+			<p>Bạn có thể nghĩ về Flutter như kết quả của những bài học trong nhiều năm dài trong lĩnh vực mobile development, state management, app architecture,… đó là lý do tại sao nó lại rất giống với React.js. Làm mọi thứ theo cách của Flutter chỉ có ý nghĩa khi bạn thật sự bắt đầu. Chúng ta hãy xem cách chúng ta có thể thực hiện ví dụ trên trong Flutter:
+			</p>
+			<ol>
+				<li>Tạo một stateless widget cho movie item(dùng stateless là vì chúng ta chỉ có các thuộc tính tĩnh), sử dụng nó như yếu tố tạo ra các thông số của một bộ phim (chẳng hạn như Dart Class), đồng thời mô tả layout theo cách khai báo và gán các giá trị của bộ phim (tên, ngày phát hành,…) vào widget.
+				</li>
+
+				<li>Tạo một widget cho giống như vậy cho list. (Tôi giữ cho ví dụ này thật đơn giản vì mục đích của bài viết. Rõ ràng là chúng tôi muốn thêm các trạng thái lỗi nữa để làm ví dụ và đây là một phần thôi)</li>
+			</ol>
+			<pre>
+				<code>
+								@override
+			  Widget build(BuildContext context) {
+			    return new FutureBuilder(
+			        future: widget.provider.loadMedia(widget.category),
+			        builder: (BuildContext context, AsyncSnapshot<List<<MediaItem>> snapshot) {
+			          return !snapshot.hasData
+			              ? new Container(
+			                  child: new CircularProgressIndicator(),
+			                )
+			              : new ListView.builder(
+			                  itemCount: snapshot.data.length,
+			                  itemBuilder: (BuildContext context, int index) =>
+			                      new MovieListItem(snapshot.data[index]),
+			                );
+			        }
+			    );
+			  }
+				</code>
+			</pre>
+			<P>Để giải quyết vấn đề này, chúng ta hãy nhìn vào những gì xảy ra ở đây. Quan trọng nhất, chúng tôi đã sử dụng một FutureBuilder (một phần của Flutter SDK), yêu cầu chúng tôi chỉ định một <a href="https://dart.dev/codelabs/async-await" style="text-decoration: none;">Future</a>(trong trường hợp này là Api Call) và 1 builder function. Hàm xây dựng cung cấp cho chúng ta BuildContext và index của mục được trả về. Sử dụng nó, chúng ta có thể truy xuất một bộ phim, đưa ra danh sách từ kết quả của Future, snapshot và tạo một MovieListItem-Widget (được tạo ở bước 1) với bộ phim dưới dạng đối số của hàm tạo.
+			</P>
+			<P>Sau đó, khi build method được gọi lần đầu tiên, chúng ta bắt đầu chờ đợi giá trị của Future. Khi nó ở đó, trình xây dựng được gọi lại với dữ liệu (snapshot) và chúng ta có thể xây dựng UI với nó.
+			</P>
+			<P>Hai class này kết hợp với lệnh gọi API sẽ cho chúng ta kết quả như sau:</P>
+
+			<div class="images">
+				<img src="img/anh.jpg" alt="anh">
+				<figcaption>Movie Detail Screen</figcaption>
+			</div>
+			
+			<p>Layout bao gồm SliverAppBar — chứa bố cục xếp chồng của hình ảnh phim, gradient, các bong bóng nhỏ và lớp phủ văn bản. Việc có thể trình bày bố cục theo module khiến mọi thứ trở nên đơn giản hơn để thiết kế ra bố cục trông có vẻ cầu kỳ này. Đây là method của screen này:
+			</p>
+			
+			<pre >
+				<code>
+				@override
+				Widget build(BuildContext context) {
+				  return new Scaffold(
+				      backgroundColor: primary,
+				      body: new CustomScrollView(
+				        slivers: <Widget>[
+				          _buildAppBar(widget._mediaItem),
+				          _buildContentSection(widget._mediaItem),
+				        ],
+				      )
+				  );
+				}
+				</code>
+			</pre>
+			<p>Khi tôi đang xây dựng layout, tôi thấy mình đã mô đun hóa các phần của layout dưới dạng các biến, method hoặc các widget khác. Chẳng hạn, các textbubble trên đầu hình ảnh chỉ là một widget khác, lấy văn bản và màu nền làm đối số. Tạo một custom view chỉ dễ như thế này:
+			</p>
+			<pre>
+				<code>
+				import 'package:flutter/material.dart';
+
+class TextBubble extends StatelessWidget {
+  final String text;
+  final Color backgroundColor;
+  final Color textColor;
+
+  TextBubble(this.text,
+      {this.backgroundColor = const Color(0xFF424242),
+      this.textColor = Colors.white});
+
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      decoration: new BoxDecoration(
+          color: backgroundColor,
+          shape: BoxShape.rectangle,
+          borderRadius: new BorderRadius.circular(12.0)),
+      child: new Padding(
+        padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 6.0),
+        child: new Text(
+          text,
+          style: new TextStyle(color: textColor, fontSize: 12.0),
+        ),
+      ),
+    );
+  }
+}
+				</code>
+			</pre>
+
+			<p>Hãy tưởng tượng việc xây dựng custom view thế này trong Android sẽ khó như thế nào. Tuy nhiên, trên Flutter, nó chỉ mất một vài phút. Việc có thể trích xuất các phần của UI của bạn thành các đơn vị độc lập như các widget giúp dễ dàng sử dụng lại các widget đó trên ứng dụng của bạn hoặc thậm chí trên các ứng dụng khác nhau. Bạn có thể nhận thấy rằng nhiều phần của layout được sử dụng lại trên các screen khác nhau trong ứng dụng của tôi và để tôi nói với bạn điều này: nó siêu dễ để thực hiện. Nó dễ đến mức tôi quyết định mở rộng ứng dụng để kết hợp thêm với các TV show. Một vài giờ sau đó mọi thứ đã được hoàn thành; ứng dụng kết hợp cả phim và TV show, không có vấn đề đau đầu nào xảy ra trong quá trình này. Tôi đã làm điều đó bằng cách xây dựng các class chung để tải và hiển thị dữ liệu, cho phép tôi sử dụng lại mọi layout cho cả phim và TV show. Tuy nhiên, với Android, để thực hiện điều tương tự tôi đã phải sử dụng các activity riêng biệt cho phim và TV show. Tôi chỉ cảm thấy rằng Android không đủ linh hoạt để chia sẻ các layout đó một cách dễ dàng và gọn gàng hơn.
+			</p>
+			<p>Vào cuối thử nghiệm với Flutter của tôi, tôi đã đi đến một kết luận rất đơn giản và thuyết phục:</p>
+			
+			<blockquote><p>Tôi đã viết được những đoạn code đẹp và dễ bảo trì hơn chạy trên cả iOS và Android. Tôi cũng tốn ít thời gian và viết ít dòng lệnh hơn để làm những điều đó.</p></blockquote>
+
+			<p>Một trong những phần tuyệt nhất là không cần phải đối phó với những thứ như Fragment, SupportCompatFragmentManagerCompat, cũng như không phải duy trì và quản lý state theo cách thủ công dễ tạo ra lỗi. Nó chỉ đơn giản là ít gây bực bội hơn so với Android development, không còn phải chờ 30 giây cho “instant reload” để thay đổi font size của TextView. Không còn XML layout. Không còn findViewById (Tôi biết rằng Butterknife, Databinding, Kotlin-Extension vẫn tồn tại, nhưng bạn hiểu ý tôi mà). Không còn code soạn sẵn dư thừa — chỉ có kết quả.</p>
+
+			<p>Khi cả 2 ứng dụng ít nhiều giống nhau về các feature, tôi luôn tò mò muốn biết sự khác biệt giữa các dòng code là gì. Kho lưu trữ này sẽ có những điểm khác biệt nào so với kho còn lại?(Disclaimer: tôi chưa tích hợp bộ lưu trữ liên tục (persistent storage) trong ứng dụng Flutter và code base của ứng dụng gốc khá là lộn xộn). Hãy so sánh code dùng Cloc và để đơn giản, chúng ta hãy xem xét các tệp Java và XML trên Android và các tệp Dart trên Flutter (không bao gồm các thư viện của bên thứ ba, do có thể sẽ tăng số liệu cho Android đáng kể).</p>
+			<p>Ứng dụng gốc Android trên Java:</p>
+			<pre>
+				<code>
+					Meta-Data for the native Android app
+
+http://cloc.sourceforge.net v 1.60  T=0.42 s (431.4 files/s, 37607.1 lines/s)
+--------------------------------------------------------------------------------
+Language                      files          blank        comment           code
+--------------------------------------------------------------------------------
+Java                             83           2405            512           8599
+XML                              96            478             28           3577
+Bourne Again Shell                1             19             20            121
+DOS Batch                         1             24              2             64
+IDL                               1              2              0             15
+--------------------------------------------------------------------------------
+SUM:                            182           2928            562          12376
+				</code>
+			</pre>
+			<p>Flutter:</p>
+			<pre>
+				<code>
+					Meta-Date for the Flutter app
+
+http://cloc.sourceforge.net v 1.60  T=0.16 s (247.5 files/s, 14905.1 lines/s)
+--------------------------------------------------------------------------------
+Language                      files          blank        comment           code
+--------------------------------------------------------------------------------
+Dart                             31            263             39           1735
+Bourne Again Shell                1             19             20            121
+DOS Batch                         1             24              2             64
+XML                               3              3             22             35
+YAML                              1              9              9             17
+Objective C                       2              4              1             16
+C/C++ Header                      1              2              0              4
+--------------------------------------------------------------------------------
+SUM:                             40            324             93           1992
+--------------------------------------------------------------------------------
+				</code>
+			</pre>
+			<p>Hãy so sánh:</p>
+			<p>Android: 179 (.java và .xml)
+				Flutter: 31 (.dart)
+				Woww! Và với số dùng code, ta có:
+				Android: 12176
+				Flutter: 1735
+			</p>
+			<p>Thật điên rồ! Tôi chỉ mong đợi ứng dụng Flutter có thể có thể giảm 1 nửa số lượng dòng code so với Android, nhưng ít hơn 85%? Điều này thật sự làm tôi mở mang tầm mắt. Tuy nhiên, nếu bạn suy xét kỹ, những điều này hoàn toàn có lý: vì tất cả các layout, hình nền, biểu tượng, v.v. cần phải được chỉ định trong XML, nhưng sau đó vẫn cần được kết nối với ứng dụng bằng Java / Kotlin, tất nhiên sẽ cần một tấn code để làm những điều đó. Mặt khác, với Flutter, bạn có thể thực hiện tất cả điều đó cùng một lúc, đồng thời ràng buộc các giá trị với UI. Và bạn có thể làm tất cả mà không phải đau đầu với những thiếu sót của Android data-binding, như cài đặt trình nghe hoặc xử lý binding code được tạo ra. Tôi nhận ra rằng thật khó để xây dựng những thứ cơ bản như vậy trên Android. Tại sao chúng ta nên viết cùng một code cho những thứ như đối số Fragment / Activity, adapter, state management and recovery, lặp đi lặp lại, trong khi nó có thể đơn giản như vậy?
+			</p>
+			<blockquote>
+				<p>
+					Với Flutter, bạn chỉ tập trung xây dựng sản phẩm của bạn. SDK sẽ là một sự trợ giúp, không phải một gánh nặng.
+				</p>
+			</blockquote>
+			<p>Tất nhiên, đây mới chỉ là khởi đầu của Flutter, vì nó vẫn còn trong giai đoạn phát hành bản Beta và chưa ở độ chín như Android. Tuy nhiên, bằng cách so sánh, có vẻ như Android có thể đã đạt đến giới hạn của nó và chúng ta có thể sớm viết được các ứng dụng Android của mình trong Flutter. Vẫn còn một số điều cần phải giải quyết, nhưng nhìn chung, tương lai có vẻ tươi sáng cho Flutter; chúng ta đã có công cụ tuyệt vời với Plugins cho Android Studio, VS Code và IntelliJ, trình biên dịch và xem các công cụ kiểm tra, và nhiều công cụ khác sẽ xuất hiện. Tất cả điều này khiến tôi tin rằng Flutter không chỉ là một cross-platform framework như bao framework khác, mà là khởi đầu của một thứ gì đó lớn hơn — khởi đầu của một kỷ nguyên app development mới.
+			</p>
+
+			<p>Và Flutter có thể vượt xa các địa hạt của Android và iOS; nếu bạn đã theo dõi các nguồn rumor, bạn có thể đã nghe nói rằng Google đang làm việc trên một hệ điều hành mới có tên Fuchsia. Hóa ra, UI của Fuchsia được xây dựng bằng Flutter.
+			</p>
+
+			<p>Đương nhiên, bạn có thể tự hỏi: liệu tôi có phải học toàn bộ một framework nào khác vào giai đoạn này không? Chúng ta vừa mới bắt đầu tìm hiểu về Kotlin và sử dụng các thành phần kiến ​​trúc, và mọi thứ đều tuyệt vời. Tại sao chúng ta lại muốn tìm hiểu về Flutter? Nhưng để tôi nói với bạn điều này: sau khi sử dụng Flutter, bạn sẽ bắt đầu hiểu được các vấn đề với sự phát triển của Android và rõ ràng là thiết kế của Flutter đã phù hợp hơn cho các ứng dụng hiện đại và có tính phản hồi.
+			</p>
+
+			<p>Lần đầu tiên tôi sử dụng DataBinding của Android, tôi đã nghĩ rằng nó là một cuộc cách mạng, nhưng cũng có cảm giác nó là một sản phẩm chưa hoàn chỉnh. Xử lý biểu thức Boolean, trình nghe nhạc và những layout phức tạp hơn khá tẻ nhạt với Databinding, và khiến tôi nhận ra Android không được thiết kế để phù hợp với một công cụ như thế. Bây giờ nếu bạn nhìn vào Flutter, nó sử dụng chung ý tưởng với Databinding — ràng buộc view/widget của bạn với các biến mà không cần phải làm thủ công trên Java/Kotlin, và nó hoàn toàn là thuộc ứng dụng gốc, không cần phải thông qua XML hay Java bằng các binding file. Điều này cho phép bạn đúc kết những gì trước đây đã từng có ít nhất một tệp XML và Java, thành Dart Class có thể sử dụng lại.
+			</p>
+			<p>Tôi cũng có thể lập luận rằng các file layout trên Android không thể tự làm bất cứ điều gì. Chúng phải được thổi phồng (inflate) trước, và chỉ sau đó chúng ta mới có thể bắt đầu thiết lập giá trị cho chúng. Điều này đưa ra một vấn đề về state management và đặt ra câu hỏi: chúng ta sẽ làm gì khi các giá trị cơ bản thay đổi? Tự lấy tham chiếu đến các khung nhìn tương ứng và đặt giá trị mới? Phương pháp đó thực sự rất dễ lỗi và tôi không nghĩ rằng nó tốt để quản lý trạng thái View của chúng ta như thế, thay vào đó, chúng ta nên mô tả layout của mình bằng cách dùng state và bất cứ khi nào state thay đổi, hãy để Framework tiếp quản bằng cách hiển thị lại các view có giá trị đã thay đổi. Bằng cách này, State của app sẽ luôn đồng bộ hóa với những gì view hiển thị. Và Flutter làm chính xác điều này!
+			</p>
+			<p>Có thể có nhiều câu hỏi hơn nữa: bạn đã bao giờ tự hỏi tại sao việc tạo menu thanh công cụ lại phức tạp như vậy trên Android chưa? Tại sao chúng ta phải mô tả các mục menu trong XML, trong đó chúng ta không thể liên kết bất kỳ business logic nào với nó (dù đó là toàn bộ mục đích của một menu), chỉ để sau đó thổng phồng (inflate) nó trong callback của Activity / Fragment trước khi binding nút listener thực sự vào một callback khác? Tại sao không làm chúng cùng một lúc giống như Flutter?
+			</p>
+			<pre>
+				<code>class ToolbarDemo extends StatelessWidget {
+  
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(
+        actions: <Widget>[
+          new IconButton(
+              icon: new Icon(Icons.star), 
+              onPressed: _handleClickFavorite
+          ),
+          new IconButton(
+              icon: new Icon(Icons.add), 
+              onPressed: _handleClickAdd
+          )
+        ],
+      ),
+      body: new MovieDetailScreen(),
+    );
+  }
+
+  _handleClickFavorite() {}
+
+  _handleClickAdd() {}
+}			</code>
+			</pre>
+
+			<p>Như bạn có thể thấy trong đoạn snippet trên, chúng ta thêm các mục menu dưới dạng Activity vào AppBar. Đó là tất cả những gì bạn phải làm — không còn nhập các biểu tượng dưới dạng tệp XML, không còn ghi đè các callback. Nghĩa là nó chỉ dễ dàng như thêm một vài widget vào cây widget của chúng ta mà thôi.
+			</p>
+			<p>Tôi có thể tiếp tục, nhưng tôi sẽ dừng ở đây và để lại cho bạn điều này: nghĩ về tất cả những điều bạn không thích về Android development và sau đó nghĩ về cách bạn sẽ thiết kế lại Framework khi giải quyết các vấn đề đó. Đó là một nhiệm vụ nặng nề, nhưng thực hiện nó sẽ giúp bạn hiểu lý do quan trọng nhất của việc Flutter xuất hiện. Công bằng mà nói, có nhiều ứng dụng (tính đến thời điểm này) vẫn sẽ giúp tôi viết bằng ứng dụng gốc c với Kotlin; Android có thể có nhược điểm, nhưng cũng cả có những lợi thế cạnh tranh của riêng nó. Tuy nhiên, cuối cùng thì tôi vẫn thấy tạo ra một ứng dụng gốc trên android sẽ ngày càng khó hơn so với việc sử dụng Flutter
+			</p>
+			<p>Nguồn: http://bit.ly/34m5pqS</p>
+			<p>Thông tin khóa học Flutter của Techmaster Vietnam <a href="https://techmaster.vn/khoa-hoc/j86/lap-trinh-di-dong-da-nen-tang-android-ios-su-dung-flutter" style="text-decoration: none;">tại đây</a></p>
+		</div>
+	
+</body>
+</html>
+
+
