@@ -6,13 +6,15 @@ body{
 	height: 750px;
 	border-width: 1px;
    	border-style: solid;
-
+   	font-family: times new roman;
+   	font-size: 16px;
 }
 
 #quoc_ngu{
 	text-align: center;
 	font-weight: bold;
 }
+
 h1{
 	text-align: center;
 }
