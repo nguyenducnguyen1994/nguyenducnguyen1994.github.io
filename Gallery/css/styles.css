@@ -49,14 +49,14 @@
 
 /*Định dạng content*/
 .content {
-	width: 100%;
+	flex: 100%;
 	background: #CECDCD;
 	
 }
 .content-gird{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 265px 265px 265px;
+	grid-template-rows: 1fr 1fr 1fr;
 	
 }
 
