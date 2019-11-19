@@ -5,7 +5,7 @@
 }
 
 #container{
-	width: 1170px;
+	width: 1000px;
 	height: 500px;
 	/* background: #C4C1C1; */
 	margin: 0 auto;
@@ -24,11 +24,11 @@
 }
 .button{
 	background: #b936e2;
-    height: 40px;
-    line-height: 30px;
+    height: 30px;
+    line-height: 15px;
     padding: 5px;
   	border-radius: 5px;
-  	box-shadow: 2px 2px #888888;
+  	box-shadow: 1px 1px #888888;
 }
 .button a{
 	color: white;
