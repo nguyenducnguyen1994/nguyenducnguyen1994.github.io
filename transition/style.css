@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	width: 1000px;
+	height: 500px;
+	/* background: #C4C1C1; */
+	margin: 0 auto;
+}
+
+.title-mv{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fas{
+	font-size: 18px;
+	color: white;
+	
+	
+}
+.button{
+	background: #b936e2;
+    height: 30px;
+    line-height: 15px;
+    padding: 5px;
+  	border-radius: 5px;
+  	box-shadow: 1px 1px #888888;
+}
+.button a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.conten-mv{
+	display: flex;	
+
+}
+
+.img-mv img{
+	width: 15%;
+	float: left;
+}
+/* Định dạng hover */
+.noidung:hover .overlay1{
+	opacity: 0.6;
+    transition: opacity 0.5s;
+}
+.contenmv2:hover .overlay{
+   opacity: 0.6;
+}
+.contenmv2:hover .icon-play{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.btn-mv{
+	border: 2px solid #595959;
+	border-radius: 5px;
+}
+.btn-mv:hover{
+	border: 2px solid #F30CFB;
+}
+.btn-mv:hover,.btn-like:hover,.btn-add:hover{
+	color: #F30CFB;
+	
+}
+.overlay1{
+	position: absolute;
+    width: 53px;
+    height: 53px;
+    background-color:#8B8989;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+ .noidung{
+ 	width: 350px;
+ 	
+ }
+.button .fas:hover {
+	color: #F600FF;
+	transition: 0.5s;
+}
+.button:hover{
+	background: #E4E1E1;
+	transition: 0.5s;
+}
+/* End */
+
+/* Định dạng lớp hiện thị trên mặt mv*/
+.btn-mv{
+
+}
+.button-overlay a{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #B7B4B4;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.button-overlay{
+	font-weight: bold;
+	text-align: right;
+	padding: 35px;
+}
+.icon-play{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: flex;
+    font-size: 35px;
+    color: white;
+    opacity: 0;
+}
+/* End */
+
+/*  thuộc tính dùng chung */
+.title-conten{
+	font-size: 18px;
+	padding: 0px 0 15px 70px;	
+}
+.name-conten{
+	color: #9D9A9A;
+	font-size: 14px;
+	    margin-left: 70px;
+}
+.contenmv2{
+	display: block;
+	float: left;
+	padding: 10px;
+	position: relative;
+}
+/* End */
+
