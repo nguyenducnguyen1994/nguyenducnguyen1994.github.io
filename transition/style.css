@@ -6,9 +6,9 @@
 
 #container{
 	width: 1000px;
-	height: 500px;
 	/* background: #C4C1C1; */
 	margin: 0 auto;
+	padding-top: 20px;
 }
 
 .title-mv{
@@ -16,132 +16,110 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.fas{
-	font-size: 18px;
-	color: white;
-	
-	
-}
-.button{
-	background: #b936e2;
-    height: 30px;
-    line-height: 15px;
-    padding: 5px;
-  	border-radius: 5px;
-  	box-shadow: 1px 1px #888888;
-}
-.button a{
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-
-}
-
-.conten-mv{
-	display: flex;	
-
-}
-
-.img-mv img{
-	width: 15%;
-	float: left;
-}
-/* Định dạng hover */
-.noidung:hover .overlay1{
-	opacity: 0.6;
-    transition: opacity 0.5s;
-}
-.contenmv2:hover .overlay{
-   opacity: 0.6;
-}
-.contenmv2:hover .icon-play{
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-.btn-mv{
-	border: 2px solid #595959;
+.button .fas{
+	background: #E517D9;
+	padding:8px;
 	border-radius: 5px;
+	font-size: 14px;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+	color: white;
 }
-.btn-mv:hover{
-	border: 2px solid #F30CFB;
+
+.button .fas:hover{
+	background: #F5F0F0;
+	color: #D059DB;
+	
+	}
+
+
+.img-content{
+	width: 50px;
+	height: 50px;
 }
-.btn-mv:hover,.btn-like:hover,.btn-add:hover{
-	color: #F30CFB;
+.img-content{
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	position: relative;	
+
+}
+.img-content img{
+	width: 100%;
+}
+.img-content:hover img{
+	transform: scale(1.2);
+}
+
+.mv:hover{
+	background: #9D9D9D;
+}
+
+.mv:hover .icon-play {
+	opacity: 1;
+}
+.mv:hover .opac {
+	opacity: 1;
+}
+
+.mv:hover .like{
+	opacity: 1
+}
+.like .icon:hover{
+	color: #C20AFF;
+}
+
+.title-content p,h3{
+	padding: 0 8px;
+}
+.title-content p{
+	color: #757171;
+	font-size: 18px;
+}
+
+.content-mv{
+	display: flex;
+	padding-top: 5px;
+}
+
+.mv{
+	display: flex;
+	padding: 5px;
+}
+
+.colum-mv{
+	width:50%;
+}
+
+.icon-play{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
 	
 }
-.overlay1{
+.opac{
 	position: absolute;
-    width: 53px;
-    height: 53px;
-    background-color:#8B8989;
-    top: 10px;
-    left: 10px;
-    opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	opacity: 0;
+	
 }
 
- .noidung{
- 	width: 350px;
- 	
- }
-.button .fas:hover {
-	color: #F600FF;
-	transition: 0.5s;
-}
-.button:hover{
-	background: #E4E1E1;
-	transition: 0.5s;
-}
-/* End */
-
-/* Định dạng lớp hiện thị trên mặt mv*/
-.btn-mv{
-
-}
-.button-overlay a{
-	font-weight: bold;
-	text-decoration: none;
-	color: black;
-}
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #B7B4B4;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-.button-overlay{
-	font-weight: bold;
+.like{
 	text-align: right;
-	padding: 35px;
-}
-.icon-play{
-    position: absolute;
-    top: 25px;
-    left: 30px;
-    display: flex;
-    font-size: 35px;
-    color: white;
-    opacity: 0;
-}
-/* End */
-
-/*  thuộc tính dùng chung */
-.title-conten{
-	font-size: 18px;
-	padding: 0px 0 15px 70px;	
-}
-.name-conten{
-	color: #9D9A9A;
-	font-size: 14px;
-	    margin-left: 70px;
-}
-.contenmv2{
-	display: block;
-	float: left;
 	padding: 10px;
-	position: relative;
+	font-size: 20px;
+	opacity: 0;
+
 }
-/* End */
 
