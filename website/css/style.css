@@ -1,0 +1,175 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding:0;
+ 	background: #e9d8f4;
+	overflow-x: hidden;/*ẩn thanh cuôn ngang*/
+	overflow-y: auto;/*ẩn thanh cuôn ngang*/
+}
+#containel{
+	width: 90%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
+}
+/* Header/Blog Title */
+#header{
+	position: relative;
+}
+
+#header h1{
+	position: absolute;
+	top:100px;
+	left: 50%;
+	transform: translate(-50%);
+	color: black;
+}
+
+#header img{
+	margin-top: 0;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+/*thanh navbar*/
+
+#navbar{
+	max-width: 100%;
+	height: 40px;
+	background: #58257b;
+	display: flex;
+  	margin: auto;
+  	margin-top: 2px;
+  	overflow: hidden;
+
+}
+#navbar ul{
+	list-style-type: none;
+}
+
+#navbar ul li{
+	float: left;
+	display: block;
+	position: relative;
+	
+}
+#navbar ul li a{
+
+	height: 40px;
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px;
+
+	
+}
+#navbar ul li a:hover{
+	background: #8BF9E6;
+	font-weight: bold
+}
+
+/* Tạo 2 cột ko bằng nhau, float cạnh nhau */
+/* Cột trái */
+.column_left{
+	float: left;
+	width: 37.5%;
+	
+}
+/*Côt giữa*/
+.column_center{
+	float: left;
+	width: 37.5%;
+	padding-left: 5px;	
+	padding-bottom: 5px;
+}
+/* Cột phải */
+.column_right{
+	float: right;
+	width: 25%;
+	padding-left: 5px;
+
+}
+
+/* Hình ảnh */
+.fakeimg img{
+	object-fit: cover;
+	width: 100%;
+	height: 140px;
+	margin: auto;
+	display: block;
+	
+}
+.fakeimg {
+	padding: 5px;
+}
+
+/* Thêm định dạng thẻ cho bài viết */
+
+.card h2{
+	padding-bottom: 5px;
+}
+.card p{
+	white-space: nowrap;
+ 	width: 360px; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.card{
+	background-color: white;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.card button a{
+	text-decoration: none;
+}
+.card button:hover a{
+	background-color: #0EF8FB;
+
+}
+
+.noidung_1{
+	
+}
+
+/* Clear float khác sau các cột */
+#content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	width: 100%;
+	float:left;
+	background-color: white;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+có chiều rộng dưới 700px */
+@media screen and (max-width: 700px) {
+  .column_left, .column_right, .column_center { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+khi màn hình có chiều rộng dưới 300px  */
+@media screen and (max-width: 300px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

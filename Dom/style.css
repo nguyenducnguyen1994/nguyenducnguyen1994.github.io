@@ -1,0 +1,30 @@
+.acction{
+  background-color: #C7C3C3;
+  color: #282626;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #F1E8E8;
+  overflow: hidden;
+}
+.active, .acction:hover{
+	background-color:#A9A2A2;
+}
+
+.acction:after {/* Unicode character for "minus" sign (+) */
+  content: '\002B';
+  color: #524E4E;
+  float: right;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
