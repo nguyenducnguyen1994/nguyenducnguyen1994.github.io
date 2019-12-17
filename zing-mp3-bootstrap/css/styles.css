@@ -1,5 +1,7 @@
 *{
+	padding: 0;
 	transition: all 1.2s;
+	margin: 0;
 }
 
 .title-mv a{
@@ -76,4 +78,8 @@
 }
 .images:hover .conten{
 	transform: translateY(-10%);
+}
+
+.logo{
+	width: 30%;
 }
