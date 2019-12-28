@@ -21,11 +21,14 @@
 }
 .img-mv{
 	cursor: pointer;
-	width: 100%;
-	height: 100%;
+	
 	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
+	
+}
+.img-mv img{
+	width: 100%;
 }
 
 .title-mv:hover a{
@@ -41,11 +44,6 @@
 	transition: all 1s;
 }
 
-.list-music:hover .opac,.icon-play:hover{
-	opacity: 1;
-	transition: all 1s;
-
-}
 .border-none{
 	border: none;
 }
@@ -70,9 +68,8 @@
 	height: 100%;
 	background-color: rgba(0,0,0,.7);
 	opacity: 0;
+	display: inline-block;
 }
-
-
 .images:hover img{
 	transform: scale(1.2);
 }
@@ -92,15 +89,26 @@
 .images:hover .conten{
 	transform: translateY(-10%);
 }
+
+
+/*******************bài hát mới*********************/
 .img-thumb{
 	width: 60px;
 	height: 60px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
 }
 .img-thumb img{
 	width: 100%;
+	height: 100%;
 }
+
 .list-music:hover{
 	background-color: #9F9E9E;
+}
+.img-thumb:hover img{
+	transform: scale(1.2);
 }
 .btn-all button{
 	height: 40px;
@@ -111,10 +119,64 @@
 	font-weight: bold;
 	font-size: 16px;
 	color: white;
-
 }
 
 .btn-all:hover button{
 	color: #65509e;
 	background-color: white;
+}
+.play-min{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+}
+
+.list-music:hover .opac,.play-min:hover{
+	opacity: 1; 
+	transition: all 1s;
+}
+/*.row:hover{
+	background: #D7CCCC;
+}*/
+.style-nav{
+	height: 41px;
+}
+.search{
+	display: flex;
+	min-width: 30%;
+	height: 30px;
+	border: 1px solid #B8B3B3;
+	
+}
+.input-search{
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	outline: none;
+	border: 0;
+}
+.icon-search{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	background: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.icon-search>i{
+	max-width: 100%;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
 }

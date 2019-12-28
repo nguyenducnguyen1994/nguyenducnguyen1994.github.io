@@ -14,8 +14,8 @@
   <!-- Header -->
   <div class="header">
     <!-------------------- Thanh Navbar ---------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary container-fluid">
-      <a class="navbar-brand" href="#"><img src="images/logo-mp-3.svg" alt="logo" class="logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+      <a class="navbar-brand" href="#">Trang chủ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,9 +43,13 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="search">
+
+				<div class="icon-search"><a href="#"><i class="fas fa-search"></i></a></div>
+				<input class="input-search" type="text" placeholder="nhập tên bài hát, ca sĩ...">
+		
+         <!--  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
         </form>
       </div>
     </nav>
@@ -231,7 +235,7 @@
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
     <div class="card border-none">
-      <div class="img-mv">
+      <div class="img-mv ">
         <a href=""><img src="images/title3/4.jpg" class="card-img-top" alt="..."></a>
         <span class="opac"></span>
         <div class="icon-play"><i class="far fa-play-circle"></i></div>
@@ -324,25 +328,128 @@
 
 <!-------------------------BÀI HÁT MỚI------------------------->
 <div class="title-mv d-flex justify-content-between mt-3">
- <h3>Bài Hát Mới</h3>
- <div class="btn-all">
-   <button><i class="far fa-play-circle"></i>Nghe tất cả</button>
- </div>
- 
+	<h3>Bài Hát Mới</h3>
+	<div class="btn-all">
+		<button><i class="far fa-play-circle"></i>Nghe tất cả</button>
+	</div>
+</div>
+
+<div class="row d-flex">
+	<div class="col-md-4">
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+				
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+				
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="col-md-4">
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+				
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row no-gutters p-2">
+				<div class="img-thumb">
+					<img src="images/new music/1.jpg" class="img-thumb" alt="...">
+				</div>
+				
+				<div class="title ml-2">
+					<h5 class="">Card title</h5>
+					<p class="card-text">OSADA</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 
 </div>
 
-<div class="row d-flex justify-content-between">
-  <div class="col-sm-4">
-    <div class="list-music d-flex mb-2">
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="list-music d-flex p-2">
       <div class="img-thumb">
-        <span class="opac"></span>
-        <div class="icon-play"><i class="far fa-play-circle"></i></div>
-        <img src="images/new music/1.jpg" alt="ảnh">
+      	
+      	<span class="opac"></span>
+      	<img src="images/new music/1.jpg" alt="anh">
+      	<div class="play-min"><i class="fas fa-play"></i></div>
+      	
+      	
+      	
+
+        
+        
+        
       </div>
       <div class="title-music ml-2">
-        <h5>Vì đó là em</h5>
-        <span>OSAD,Shin Hyun Woo</span>
+        <div><b>Vì đó là em</b></div>
+        <div class="name-mv">OSAD,Shin Hyun Woo</div>
       </div>
     </div>
     <div class="list-music d-flex mb-2">
@@ -363,6 +470,9 @@
         <span>OSAD,Shin Hyun Woo</span>
       </div>
     </div>
+
+
+
     <div class="list-music d-flex mb-2">
       <div class="img-thumb">
         <img src="images/new music/1.jpg" alt="ảnh">
@@ -478,7 +588,7 @@
 
 </div>
 </div>
-</div>
+</div> -->
 
 <!----------CHỦ ĐỀ VÀ THỂ LOẠI------------>
 <div class="title-mv d-flex justify-content-between mt-3">
