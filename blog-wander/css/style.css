@@ -158,11 +158,11 @@ main{
 	line-height: 28px;
 	color: #333333;
 }
-.row-custom{
+/*.row-custom{
 	padding-top: 35px;
 	padding-bottom: 20px;
 	margin: 0;
-}
+}*/
 .card-custom{
 	width: 100%;
 	max-width: 442px;
