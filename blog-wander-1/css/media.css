@@ -1,0 +1,34 @@
+@media (max-width: 575.98px) { 
+	.header{
+		display: block;
+		margin: 0 auto;
+	}
+	.nav{
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	.nav>li {
+		margin-left: 40px; 
+	}
+	.title-slider{
+		position: absolute;
+		width: 100%;
+		max-width: 255px;
+		height: 140px;
+		left: 10%;
+		top: 40%;
+		background-color: #FFFFFF;
+	}
+	.title-slider>p{
+		padding: 10px;
+		font-size: 18px;
+		/*font-weight: 500;*/
+	/*font-size: 36px;
+	line-height: 41px;*/
+}
+
+
+
+
+}

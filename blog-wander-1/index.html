@@ -2,40 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Trang chủ</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<header>
-		<div class="header">
-			<a href="" class="logo">
-				<span class="logo-img"></span>
-			</a>
-			<nav>
-				<ul class="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Places</a></li>
-					<li><a href="#">Articles</a></li>	
-				</ul>
+	<div class="container">
+		<header>
 
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#"><img src="img/Logo.svg" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+					<ul class="nav justify-content-end" id="navbarNavAltMarkup">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+				
 			</nav>
-		</div>
-		<div class="slider">
-			<div class="slider-img">
-				<img src="img/Cover Picture.jpg" alt="">
+			<div class="slider">
+				<div class="slider-img">
+					<img src="img/Cover Picture.jpg" alt="">
+				</div>
+				<div class="arrows">
+					<span class="left"><i class="fas fa-long-arrow-alt-left"></i></span>
+					<span class="righ"><i class="fas fa-long-arrow-alt-right"></i></span>
+				</div>
+				<div class="title-slider">
+					<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Ut pr. love pr ui.</p>
+				</div>
 			</div>
-			<div class="arrows">
-				<span class="left"><i class="fas fa-long-arrow-alt-left"></i></span>
-				<span class="righ"><i class="fas fa-long-arrow-alt-right"></i></span>
-			</div>
-			<div class="title-slider">
-				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Ut pr. love pr ui.</p>
-			</div>
-		</div>
-	</header>
+		</header>
+	</div>
 	<main>
 		<div class="page">
 			<div class="title-facts"><h1>Facts</h1></div>
@@ -75,23 +89,23 @@
 					<img src="img/new/new2.jpg" class="card-img-top" alt="...">
 					<div class="card-body card-body-custom">
 						<h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h5>
-						<p class="card-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat.</p>
+						<p class="card-text">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
 					</div>
 				</div>
 			</div>
-			<div class="row row-custom justify-content-between">
+			<div class="row  justify-content-between">
 				<div class="card card-custom">
 					<img src="img/new/new3.jpg" class="card-img-top" alt="...">
 					<div class="card-body card-body-custom">
 						<h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h5>
-						<p class="card-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat.</p>
+						<p class="card-text">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
 					</div>
 				</div>
 				<div class="card card-custom">
 					<img src="img/new/new4.jpg" class="card-img-top" alt="...">
 					<div class="card-body card-body-custom">
 						<h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h5>
-						<p class="card-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat.</p>
+						<p class="card-text">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
 					</div>
 				</div>
 			</div>
