@@ -90,9 +90,9 @@ main{
 	margin: 0 auto;
 	padding-top: 110px; 
 }
-.title-facts{
+/*.title-facts{
 	padding-bottom: 35px;
-}
+}*/
 .title-facts>h1{
 	font-weight: 500;
 	font-size: 48px;
@@ -111,6 +111,7 @@ main{
 	border-top: 2px solid #D8D8D8;
 	border-bottom: 1px solid #D8D8D8;
 	box-sizing: border-box;
+	margin-top: 44px;
 	
 }
 .facts-item{
