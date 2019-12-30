@@ -1,15 +1,28 @@
 body{
 	font-family: 'Ubuntu', sans-serif;
 }
-.nav{
+.container{
 	width: 100%;
+	max-width: 1080px;
+
+}
+.navbar{
 	max-width: 980px;
-	height: auto;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+/*.nav{
+
+	max-width: 980px;
+	height: 100px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 7px;
+	padding: 10px 10px 10px 10px;
 	box-sizing: border-box;
 }
 .nav{
@@ -24,7 +37,7 @@ body{
 	text-decoration: none;
 	color: #333333;
 	letter-spacing: 3.57143px;
-}
+}*/
 .logo-img{
 	display: block;
 	width: 127px;
