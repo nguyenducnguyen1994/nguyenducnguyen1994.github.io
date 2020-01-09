@@ -15,6 +15,9 @@ body{
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
+.nav-item{
+	padding-left: 1.5rem;
+}
 .navbar .navbar-nav .nav-item .nav-link{
 	color: #333333;
 	font-weight: normal;
@@ -31,6 +34,7 @@ body{
 }
 .navbar .navbar-nav .nav-item .nav-link:hover{
 	color: #35ABC9FF;
+	transition: 0.5s;
 }
 
 .carousel{
@@ -88,11 +92,15 @@ body{
 	background-color: white;
 	margin-bottom: 3.12rem;
 }
-.title>h4{
+.title{
+	padding-bottom: 1.25rem;
+}
+.title>a{
 	font-weight: bold;
 	font-size: 3rem;
 	line-height: 55px;
 	color: #333333;
+	text-decoration: none;
 }
 .wrap-random{
 	max-width: 943px;
@@ -135,8 +143,8 @@ body{
 	width: 100%;
 }
 .card-img-top:hover{
-	transform: scale(1.2);
-	transition: 1.3s;
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 .more{
 	position: absolute;
@@ -153,6 +161,7 @@ body{
 }
 .more>a:hover{
 	color: #122EECFF;
+	transition: 0.5s;
 }
 /**********************Main**************************/
 .box-new-blog{
@@ -185,6 +194,7 @@ body{
 }
 .btn-more .btn:hover{
 	color: white;
+	transition: 0.5s;
 }
 .card-body{
 	padding: 1.25rem 0rem 1.25rem 0rem;

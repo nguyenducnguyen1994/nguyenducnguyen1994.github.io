@@ -48,11 +48,15 @@
 		margin: 0 auto;
 		margin-top:6rem;
 	}
-	.title>h4{
+	.title{
+		padding-bottom: 1.25rem;
+	}
+	.title>a{
 		font-weight: bold;
 		font-size: 2rem;
 		line-height: 55px;
 		color: #333333;
+		text-decoration: none;
 	}
 	.wrap-random{
 		max-width: 943px;
@@ -221,11 +225,15 @@
 		margin: 0 auto;
 		margin-top:5rem;
 	}
-	.title>h4{
+	.title{
+		padding-bottom: 1.25rem;
+	}
+	.title>a{
 		font-weight: bold;
 		font-size: 2rem;
 		line-height: 55px;
 		color: #333333;
+		text-decoration: none;
 	}
 	.wrap-random{
 		max-width: 943px;
@@ -385,11 +393,15 @@
 		margin-top:5rem;
 		background-color: white;
 	}
-	.title>h4{
+	.title{
+		padding-bottom: 1.25rem;
+	}
+	.title>a{
 		font-weight: bold;
 		font-size: 2rem;
 		line-height: 55px;
 		color: #333333;
+		text-decoration: none;
 	}
 	.wrap-random{
 		max-width: 943px;
