@@ -1,0 +1,94 @@
+@media (max-width: 575.98px) { 
+	.col-sm-12, .col-md-4{
+		padding-bottom: 1.25rem;
+	}
+	.col-sm-12:nth-child(3), .col-md-4:nth-child(3){
+		padding-bottom: 0;
+	}
+	.navbar {
+		height: auto;
+		background-color: #ffffff;
+		margin: 0 auto;
+		padding: 1.5rem 0;
+	}
+	.navbar-nav .nav-item{
+		background-color: #c2e8f5;
+		border-bottom: 1px solid #B7B2B2;
+	}
+	.carousel{
+		position: relative!important;
+	}
+	.arrows-title {
+		width: 15.53%;
+		height: 2rem;
+		top: 7rem;
+		left: 2.25rem;
+	}
+	.title-arrows {
+		width: 46.93%;
+		height: 7.5rem;
+		top: 9rem;
+		left: 2.25rem;
+	}
+	.title-arrows>p{
+		font-weight: 300;
+		font-size: 1.25rem;
+		line-height: 1.625rem;
+		color: #333333;
+		padding: 1rem;
+	}
+	.title-arrows>p>b{
+		font-weight: 500;
+	}
+	.title{
+		padding-bottom: 0;
+	}
+	.title>h1{
+		font-weight: bold;
+		font-size: 1.8rem;
+		line-height: 3.4375rem;
+		color: #333333;
+		text-decoration: none;
+	}
+	.card-facts {
+		width: 100%;
+		height: 16.75rem;
+		border: 1px solid #B8B2B2;
+		border-radius: 0;
+	}
+	.box-random-facts {
+		margin-top:  4.5rem;
+	}
+	.more {
+		position: absolute;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+		color: #333333;
+		top: 85%;
+		left: 70%;
+	}
+	.card-deck .card {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.box-footer{
+		display: block;
+	}
+	.box-footer>p{
+		display: none;
+	}
+	.nav-footer{
+		padding: 0;
+	}
+	.nav-footer>li:nth-child(1){
+		padding-left: 0;
+
+	}
+
+
+
+
+
+
+}

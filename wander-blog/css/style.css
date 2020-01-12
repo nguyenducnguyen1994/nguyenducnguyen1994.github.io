@@ -173,6 +173,13 @@ body{
 }
 .card-deck .card {
 	margin-bottom: 1.25rem;
+	margin-right: 10px;
+    margin-left: 0;
+
+}
+.card-deck .card:nth-child(2){
+	margin-right: 0;
+
 }
 .card-deck {
 	margin-right:0px; 
