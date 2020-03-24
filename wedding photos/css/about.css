@@ -1,0 +1,56 @@
+*{
+	letter-spacing: 0.05em;
+}
+
+.text-about{
+	font-size: 14px;
+	line-height: 35px;
+	letter-spacing: 0.05em;
+	text-align: justify;
+}
+.img-team{
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+.img-team>img{
+	width: 100%;
+	max-height: 300px;
+	border-radius: 8px;
+}
+.name-team, .work-team{
+	padding-top: 14px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+
+.add-sidebar{
+	background: #f0f0f0;
+	border: 1px dashed #a97b50;
+	padding: 15px 15px 15px 30px;
+}
+.card-title-sidebar, .content-add-sidebar, .content-hotlie-sidebar, .content-email-sidebar, .content-fanfage-sidebar{
+	line-height: 35px;
+}
+.fa-map-marker-alt, .fa-phone-alt, .fa-envelope, .fa-facebook-f{
+	margin-right: 10px;
+	font-size: 14px;
+}
+.card-title-sidebar{
+	font-weight: 900;
+	font-size: 18px;
+	align-items: center;
+	letter-spacing: 0.05em;
+	color: #3D3D3D;
+}
+.content-email-sidebar>a, .content-fanfage-sidebar>a, .content-hotlie-sidebar, .content-add-sidebar{
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #3D3D3D;
+
+}
