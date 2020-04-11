@@ -5,8 +5,8 @@ $(document).ready(function() {
   autoplay:true,
   autoplayTimeout:3000,
   autoplayHoverPause:true,
-  animateOut: 'fadeOutRight',
-  animateIn: 'flipInX',
+  // animateOut: 'fadeOutRight',
+  // animateIn: 'flipInX',
   items:1,
   smartSpeed:450,
   responsive:{
