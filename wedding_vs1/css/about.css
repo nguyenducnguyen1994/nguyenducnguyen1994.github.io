@@ -1,0 +1,103 @@
+/********************** CSS ABOUT *********************/
+
+.text-about {
+	padding-bottom: 15px;
+}
+.card-team{
+	margin-bottom: 30px;
+	border: 1px solid #DFDDDD;
+}
+
+.img-team{
+	position: relative;
+	width: 100%;
+}
+
+.img-team>img{
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #E5E2E2;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .3s ease;
+	transition: 1s ease;
+}
+.img-team:hover .overlay{
+	opacity: 0.3;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.img-team .icon-overlay:hover{
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+.icon-overlay img{
+	opacity: 0.8;
+	padding: 0.2rem;
+	max-width: 45px;
+}
+.icon-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+.icon-overlay img:hover{
+	opacity: 1;
+}
+.title-add-sidebar{
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+.content-add-sidebar{
+	font-size: 1rem;
+	font-weight: 500;
+}
+.add-sidebar{
+	background: #f0f0f0;
+	border: 1px dashed #a97b50;
+	padding: 15px 15px 15px 15px;
+	line-height: 35px;
+}
+.content-hotlie-sidebar b{
+	color: rgba(202, 24, 86, 0.8);
+	font-size: 1.125rem;
+}
+.fa-map-marker-alt, .fa-envelope, .fa-facebook-square{
+	margin-right: 10px;
+}
+.content-fanfage-sidebar a, .content-email-sidebar a{
+	font-weight: 500;
+}
+.content-hotlie-sidebar b:hover{
+	opacity: 0.8;
+}
+
+.title-sidebar h5{
+	font-weight: 900;
+	font-size: 1.25rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.fa-chevron-right{
+	font-size: 1.25rem;
+}
+.album-sidebar{
+	padding-top: 15px;
+}
