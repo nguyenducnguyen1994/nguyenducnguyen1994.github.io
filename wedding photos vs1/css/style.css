@@ -99,10 +99,6 @@
 /******************** CSS MAIN *************************/
 
 /* Packeges */
-.card-packages{
-	padding-bottom: 1.25rem;
-
-}
 .img-packages{
 	width: 100%;
 	overflow: hidden;
@@ -355,33 +351,10 @@
 }
 
 
-.back-to-top {
-	position: fixed;
-	top: auto;
-	left: auto;
-	right: 22px;
-	bottom: 100px;
-	font-size: 61px;
-	opacity: 0.8;
-	z-index: 9999;
-	cursor: pointer;
-}
 
-.back-to-top:hover {
-	opacity: 1;
-}
 
-#live-chat{
-	position: fixed;
-	top: auto;
-	left: auto;
-	right: 15px;
-	bottom: 15px;
-	font-size: 40px;
-	opacity: 0.8;
-	z-index: 9999;
-	cursor: pointer;
-}
+
+
 
 
 
@@ -520,4 +493,4 @@
 
 		}
 
-	}
+		}
