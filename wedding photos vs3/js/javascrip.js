@@ -30,7 +30,7 @@ $(document).ready(function() {
   navText: ["<img src='images/prev.png'>","<img src='images/next.png'>"],
   dots:false,
   autoplay:true,
-  autoplayTimeout:1000,
+  autoplayTimeout:10000,
   autoplayHoverPause:true,
   responsive:{
     0:{
@@ -51,6 +51,7 @@ $(document).ready(function() {
   dots:false,
   nav:false,
   autoplay:true,
+  autoplayTimeout:9000,
   autoplayHoverPause:true,
   responsive:{
     0:{
@@ -72,6 +73,7 @@ $(document).ready(function() {
   dots:false,
   nav:false,
   autoplay:true,
+  autoplayTimeout:10000,
   autoplayHoverPause:true,
   responsive:{
     0:{
