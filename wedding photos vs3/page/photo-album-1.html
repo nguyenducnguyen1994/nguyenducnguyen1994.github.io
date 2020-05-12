@@ -24,7 +24,7 @@
 	<div class="container-fluid">
 		<header id="header-logo">
 			<div class="img-logo">
-				<a href="#"><img src="../images/logo.svg" alt="logo" class="img-fluid"></a>
+				<a href="../index.html"><img src="../images/logo.svg" alt="logo" class="img-fluid"></a>
 			</div>
 		</header>
 		<nav class="navbar navbar-expand-lg navbar-light navbar-style" id="menu-sticky">
@@ -113,10 +113,20 @@
 						<div class="col-12 col-sm-6 col-md-4">
 							<div class="card-packages">
 								<div class="img-packages">
-									<img class="img-fluid img-thumbnail img-scale" src="../images/packages/haLong/ha long (6).jpg" alt="img goi (4).jpg" title="GÓI ẢNH CƯỚI TẠI HẠ LONG">
+									<a href="gallery-trung-van.html"><img class="img-fluid img-thumbnail img-scale" src="../images/packages/ptSmiley ville/smiley ville (8).jpg" alt="img goi (5).jpg" title="GÓI ẢNH CƯỚI TẠI TAM ĐẢO"></a>
 								</div>
 								<div class="title-sm">
-									<h6>	<a href="#">TRƯỜNG <i class="fas fa-heart"></i> VÂN</a></h6>
+									<h6><a href="gallery-trung-van.html">trung <i class="fas fa-heart"></i> vân</a></h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4">
+							<div class="card-packages">
+								<div class="img-packages">
+									<a href="gallery-truong-van.html"><img class="img-fluid img-thumbnail img-scale" src="../images/packages/haLong/ha long (6).jpg" alt="img goi (4).jpg" title="GÓI ẢNH CƯỚI TẠI HẠ LONG"></a>
+								</div>
+								<div class="title-sm">
+									<h6><a href="gallery-truong-van.html">trường <i class="fas fa-heart"></i> vân</a></h6>
 								</div>
 							</div>
 						</div>
@@ -126,20 +136,11 @@
 									<img class="img-fluid img-thumbnail img-scale" src="../images/packages/ptSmiley ville/smiley ville (7).jpg" alt="img goi (6).jpg" title="GÓI ẢNH CƯỚI TẠI PHIM TRƯỜNG SMILEY VILLE">
 								</div>
 								<div class="title-sm">
-									<h6><a href="#">LONG <i class="fas fa-heart"></i> HUYỀN </a></h6>
+									<h6><a href="#">long <i class="fas fa-heart"></i> huyền </a></h6>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="card-packages">
-								<div class="img-packages">
-									<a href="gallery-trung-van.html"><img class="img-fluid img-thumbnail img-scale" src="../images/packages/ptSmiley ville/smiley ville (8).jpg" alt="img goi (5).jpg" title="GÓI ẢNH CƯỚI TẠI TAM ĐẢO"></a>
-								</div>
-								<div class="title-sm">
-									<h6><a href="gallery-trung-van.html">trung <i class="fas fa-heart"></i> vân</a></h6>
-								</div>
-							</div>
-						</div>
+						
 						<div class="col-12 col-sm-6 col-md-4">
 							<div class="card-packages">
 								<div class="img-packages">
@@ -269,16 +270,30 @@
 		<!-- Load Back Top -->
 		<div id="toTop"><i class="fas fa-angle-double-up"></i></div>
 		<!-- Load Facebook SDK for JavaScript -->
-		<div id='fb-root'></div>   
+		<div id="fb-root"></div>
 		<script>
-			(function(d, s, id) {     
-				var js, fjs = d.getElementsByTagName(s)[0];     
-				js = d.createElement(s); js.id = id;     
-				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';     
-				fjs.parentNode.insertBefore(js, fjs); 
-			}(document, 'script', 'facebook-jssdk'));
-		</script>  
-		<div class='fb-customerchat' page_id='105265481158435' theme_color='#44bec7' logged_in_greeting='Xin chào, tôi có thể hổ trợ gì cho bạn không?' logged_out_greeting='Xin chào, tôi có thể hổ trợ gì cho bạn không?'>
+			window.fbAsyncInit = function() {
+				FB.init({
+					xfbml            : true,
+					version          : 'v7.0'
+				});
+			};
+
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<!-- Your customer chat code -->
+			<div class="fb-customerchat"
+			attribution=setup_tool
+			page_id="105265481158435"
+			theme_color="#ff5ca1"
+			logged_in_greeting="Chào mùng bạn đến với Wedding Photos"
+			logged_out_greeting="Chào mùng bạn đến với Wedding Photos">
 		</div>
 		<!-- ADD JAVACRIPT -->
 		<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>

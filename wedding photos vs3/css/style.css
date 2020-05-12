@@ -11,7 +11,7 @@
 	text-decoration: none!important;
 }
 .breadcrumb-item a:hover{
-	color: rgba(202, 24, 86, 0.8)!important;
+	color: #d41856!important;
 }
 .breadcrumb-item a{
 	font-weight: 500;
@@ -51,7 +51,7 @@
 	margin: 0 auto;
 }
 .navbar-nav .nav-item:hover{
-	border-bottom: 2px solid rgba(202, 24, 86, 0.8);
+	border-bottom: 2px solid #d41856;
 	transition: 1s;
 }
 .navbar-nav .nav-item .nav-link:hover{
@@ -63,10 +63,10 @@
 	border-bottom: 2px solid transparent;
 }
 .nav-item:nth-child(1){
-	border-bottom: 2px solid rgba(202, 24, 86, 0.8);
+	border-bottom: 2px solid #d41856;
 }
 .navbar-nav .nav-item .nav-link {
-	color: rgba(202, 24, 86, 0.8)!important;
+	color: #d41856!important;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1rem;
@@ -76,15 +76,24 @@
 	padding: 0;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	border-radius: 0;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all 300ms ease;
+	min-width: 8rem;
+
 }
 .dropdown-item{
 	font-weight: 500;
 	font-size: 1rem;
 	padding: .25rem 0.5rem;
+	text-align: center!important;
 }
-
+.dropdown-item{
+	border-bottom: 2px solid transparent;
+}
 .dropdown-item:hover{
-	color: rgba(202, 24, 86, 0.8)!important;
+	color: #d41856!important;
+	border-bottom: 2px solid;
 }
 .dropdown-item:active{
 	background-color: #C9C6C6;
@@ -98,7 +107,7 @@
 
 /******************** CSS MAIN *************************/
 
-/* Packeges */
+/* [1] CÁC GÓI */
 .img-packages{
 	width: 100%;
 	overflow: hidden;
@@ -113,10 +122,9 @@
 	text-transform: uppercase;
 }
 .title-sm>h6>a:hover{
-	color: rgba(202, 24, 86, 0.8);
+	color: #d41856;
 	transition: 0.5s;
 }
-
 .btn-3 {
 	border: 0 solid;
 	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
@@ -126,7 +134,6 @@
 	text-shadow: none;
 	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 } 
-
 .btn-3:hover {
 	border: 1px solid;
 	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
@@ -139,7 +146,7 @@
 	height: 35px;
 	font-size: 1rem;
 	margin: 0 auto;
-	background-color: rgba(202, 24, 86, 0.8)!important;
+	background-color: #d41856;
 	border-radius: 5px;
 	line-height: 35px;
 	text-align: center;
@@ -147,13 +154,16 @@
 }
 .btn-center>a, .btn-left>a{
 	text-decoration: none;
+	color: #ffffff;
+}
+.btn-center:hover, .btn-left:hover{
+	background: #959494;
+}
+.btn-center:hover a, .btn-left:hover a{
 	color: #000000;
+	font-weight: 500;
 }
-.btn-center:hover>a,.btn-left:hover>a{
-	color:#FFFFFF;
-}
-
-/* Wrap-info */
+/* [2] GIỚI THIỆU */
 .wrap-info{
 	background: linear-gradient(#ffffff, rgba(0, 143, 229, 0.10));
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% calc(100% - 45px), 50% 100%, 0 calc(100% - 45px));
@@ -179,12 +189,11 @@
 	height: 20px;
 	margin: 0 auto;
 }
-
 .btn-left{
 	max-width: 120px;
 	height: 35px;
 	font-size: 1rem;
-	background-color: rgba(202, 24, 86, 0.8)!important;
+	background-color: #d41856;
 	border-radius: 5px;
 	line-height: 35px;
 	text-align: center;
@@ -192,13 +201,16 @@
 }
 .fa-book{
 	padding-right: 0.5rem;
+	color: #ffffff;
 }
-.btn-left:hover .fa-book{
-	color: #ffff;
-
+.btn-left:hover{
+	background-color: 
+}
+.btn-left:hover a, .btn-left:hover i{
+	color: #000000;
 }
 
-/* Wrap-featured-album */
+/*[3] ALBUM NỔI BẬT */
 .owl-nav {
 	position: relative;
 	bottom: 140px;
@@ -224,7 +236,7 @@
 }
 
 
-/* Wrap-advisory-corner */
+/*[4] GÓC TƯ VẤN */
 .wrap-advisory-corner{
 	background: linear-gradient(rgba(0, 143, 229, 0.05), rgba(255, 255, 255, 0));
 	padding-top: 30px;
@@ -238,7 +250,6 @@
 .title-advisory-corner>h5>a{
 	text-decoration: none;
 	font-size: 1rem;
-
 }
 .title-advisory-corner>p{
 	font-size: 1rem;
@@ -246,7 +257,7 @@
 }
 
 
-/* Cảm nhận khách hàng */
+/* [5] CẢM NHẬN KHÁCH HÀNG */
 
 .wrap-customer-comments{
 	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 143, 229, 0.05));
@@ -290,17 +301,18 @@
 }
 .box-icon>a>img{
 	padding-left: 0.75rem;
-	max-width: 60px;
+	max-width: 50px;
 	opacity: 0.8;
 }
 .box-icon>a>img:hover{
 	opacity: 1;
 }
 .box-phone a{
+	color: #d41856;
 	font-weight: 700;
 }
 .box-phone a:hover{
-	color: rgba(202, 24, 86, 0.8);
+	color: #000000;
 }
 .content-phone{
 	font-weight: bold;
@@ -310,7 +322,7 @@
 }
 .content-phone>a{
 	text-decoration: none!important;
-	color: rgba(202, 24, 86, 0.8);
+	color: #d41856;
 }
 .content-phone>a:hover{
 	opacity: 0.8!important;
@@ -343,17 +355,190 @@
 }
 .content-email>a, .content-fanfage>a{
 	text-decoration: none;
-	/* color: rgba(202, 24, 86, 0.8)!important; */
 	font-weight: 500;
 }
 .content-email>a:hover, .content-fanfage>a:hover{
 	opacity: 0.8;
 }
+/* HOTLINE */
+.hotline-phone-ring-wrap {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999999;
+}
+.hotline-phone-ring {
+	position: relative;
+	visibility: visible;
+	background-color: transparent;
+	width: 110px;
+	height: 110px;
+	cursor: pointer;
+	z-index: 11;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	transition: visibility .5s;
+	left: 0;
+	bottom: 0;
+	display: block;
+}
+.hotline-phone-ring-circle {
+	width: 85px;
+	height: 85px;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	background-color: transparent;
+	border-radius: 100%;
+	border: 2px solid #e60808;
+	-webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+	animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+	transition: all .5s;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+	width: 65px;
+	height: 65px;
+	top: 16pt;
+	left: 16pt;
+	position: absolute;
+	background-color: #d41856;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	-webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+	animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+	transition: all .5s;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+	background-color: #d41856;
+	width: 60px;
+	height: 60px;
+	top: 18pt;
+	left: 18pt;
+	position: absolute;
+	background-size: 20px;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	-webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+	animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+	width: 30px;
+	height: 30px;
+}
+.hotline-bar {
+	position: absolute;
+	background: #d41856;
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+	border-radius: 3px;
+	padding: 0 10px;
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	z-index: 9;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 50px !important;
+	/* width: 175px !important; */
+	left: 33px;
+	bottom: 37px;
+}
+.hotline-bar > a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	text-indent: 50px;
+	display: block;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+	color: #fff;
+}
 
-/* ********* Back Top********** */
+
+
+@-webkit-keyframes phonering-alo-circle-anim {
+	0% {
+		-webkit-transform: rotate(0) scale(0.5) skew(1deg);
+		-webkit-opacity: 0.1;
+	}
+	30% {
+		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+		-webkit-opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+		-webkit-opacity: 0.1;
+	}
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+	0% {
+		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+		opacity: 0.6;
+	}
+	50% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+		opacity: 0.6;
+	}
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+	0% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+	}
+	10% {
+		-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+	}
+	20% {
+		-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+	}
+	30% {
+		-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+	}
+	40% {
+		-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+	}
+	50% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+	}
+}
+
+/* [3] BACK TOP */
 #toTop {
 	display: inline-block;
-	background-color: rgb(255, 92, 161);
+	background-color: #d41856;
 	color: white;
 	width: 60px;
 	height: 60px;
@@ -369,10 +554,9 @@
 	line-height: 3.75rem;
 	font-size: 1.5625rem;
 }
-
 #toTop:hover {
 	cursor: pointer;
-	background-color: #333;
+	background-color: #807E7E;
 }
 #toTop:active {
 	background-color: #555;
@@ -445,6 +629,10 @@
 			text-align: center;
 
 		}
+		.hotline-bar {
+			display: none;
+		}
+
 
 	}
 
@@ -468,6 +656,9 @@
 		.dropdown-item{
 			text-align: center;
 		}
+		.hotline-bar {
+			display: none;
+		}
 
 	}
 
@@ -489,6 +680,9 @@
 		.dropdown-item{
 			text-align: center;
 		}
+		.hotline-bar {
+			display: block;
+		}
 
 	}
 	/* Large devices (desktops, 992px and up) */
@@ -505,6 +699,7 @@
 		.dropdown-item{
 			text-align: center;
 		}
+		
 
 
 	}

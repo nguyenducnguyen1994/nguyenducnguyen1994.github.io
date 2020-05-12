@@ -25,7 +25,7 @@
 
 		<header id="header-logo">
 			<div class="img-logo">
-				<a href="#"><img src="../images/logo.svg" alt="logo" class="img-fluid"></a>
+				<a href="../index.html"><img src="../images/logo.svg" alt="logo" class="img-fluid"></a>
 			</div>
 		</header>
 
@@ -195,16 +195,30 @@
 		<!-- Load Back Top -->
 		<div id="toTop"><i class="fas fa-angle-double-up"></i></div>
 		<!-- Load Facebook SDK for JavaScript -->
-		<div id='fb-root'></div>   
+		<div id="fb-root"></div>
 		<script>
-			(function(d, s, id) {     
-				var js, fjs = d.getElementsByTagName(s)[0];     
-				js = d.createElement(s); js.id = id;     
-				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';     
-				fjs.parentNode.insertBefore(js, fjs); 
-			}(document, 'script', 'facebook-jssdk'));
-		</script>  
-		<div class='fb-customerchat' page_id='105265481158435' theme_color='#44bec7' logged_in_greeting='Xin chào, tôi có thể hổ trợ gì cho bạn không?' logged_out_greeting='Xin chào, tôi có thể hổ trợ gì cho bạn không?'>
+			window.fbAsyncInit = function() {
+				FB.init({
+					xfbml            : true,
+					version          : 'v7.0'
+				});
+			};
+
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<!-- Your customer chat code -->
+			<div class="fb-customerchat"
+			attribution=setup_tool
+			page_id="105265481158435"
+			theme_color="#ff5ca1"
+			logged_in_greeting="Chào mùng bạn đến với Wedding Photos"
+			logged_out_greeting="Chào mùng bạn đến với Wedding Photos">
 		</div>
 		<!-- ADD JAVACRIPT -->
 		<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
