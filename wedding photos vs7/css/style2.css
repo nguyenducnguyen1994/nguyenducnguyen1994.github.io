@@ -1,0 +1,141 @@
+
+.text-about {
+	padding-bottom: 15px;
+}
+.card-team{
+	margin-bottom: 30px;
+	border: 1px solid #DFDDDD;
+}
+
+.img-team{
+	position: relative;
+	width: 100%;
+}
+
+.img-team>img{
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #E5E2E2;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .3s ease;
+	transition: 1s ease;
+}
+.img-team:hover .overlay{
+	opacity: 0.3;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.img-team .icon-overlay:hover{
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+.icon-overlay img{
+	opacity: 0.8;
+	padding: 0.2rem;
+	max-width: 45px;
+}
+.icon-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+.icon-overlay img:hover{
+	opacity: 1;
+}
+.title-add-sidebar{
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+.content-add-sidebar, .content-hotlie-sidebar{
+	font-weight: 500;
+	
+}
+.add-sidebar{
+	background: #f0f0f0;
+	border: 1px dashed #a97b50;
+	padding: 5px 5px 10px 10px;
+	line-height: 35px;
+}
+
+.fa-map-marker-alt, .fa-envelope, .fa-facebook-square, .fa-phone-square-alt{
+	margin-right: 10px;
+}
+.content-fanfage-sidebar a, .content-email-sidebar a{
+	font-weight: 500;
+	font-style: italic;
+}
+.content-fanfage-sidebar a, .content-email-sidebar a, .content-add-sidebar a, .content-hotlie-sidebar a{
+	color: #d41856;
+}
+.content-fanfage-sidebar a:hover, .content-email-sidebar a:hover, .content-add-sidebar a:hover, .content-hotlie-sidebar a:hover{
+	opacity: 0.8;
+	transition: 1s;
+}
+
+.title-sidebar h5{
+	font-weight: 900;
+	font-size: 1.25rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.title-sidebar .all-album{
+	color: #000000;
+}
+.title-sidebar .all-album:hover{
+	color: #d41856;
+	opacity: 0.8;
+}
+.album-sidebar{
+	padding-top: 15px;
+}
+
+
+
+
+
+.sanPham>li ,.trangPhuc>li {
+	margin-bottom: 0.75rem;
+}
+tr th, td{
+	text-align: center;
+}
+td li{
+	padding-bottom: 0.75rem;
+}
+.table-bordered, .table-bordered th, .table-bordered td{
+	border: 1.75px solid #6A6161!important;
+}
+.title-sidebar h5{
+	font-size: 1.25rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-bottom: 0.75rem;
+}
+
+.border {
+    border: 1px solid #A6AAAA!important;
+    border-radius: 4px;
+}
+.box1:hover {
+	color: #d41856;
+	transition: 1s;
+	box-shadow: 0px 2px 3px #CCC;
+}
