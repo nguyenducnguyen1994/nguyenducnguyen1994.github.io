@@ -1,0 +1,24 @@
+.card-advisory-corner-all{
+	padding: 0.5rem;
+	border-radius: 5px;
+	background: #ffffff;
+	transition: 0.5s;
+	margin-bottom: 1rem;
+
+}
+.card-advisory-corner-all:hover{
+	box-shadow: inset 0px 0 5px 0px rgba(0, 0, 0, .50);
+
+}
+.text-advisory-corner-all{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+
+}
+.title-big-content h3{
+	font-size: 1.25rem;
+	font-weight: 900;
+}
