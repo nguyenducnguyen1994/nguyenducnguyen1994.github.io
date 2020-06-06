@@ -193,7 +193,9 @@ h5.text {
 }
 
 
-
+.card-packages-sidebar{
+    padding-bottom: 20px;
+}
 .card-packages-sidebar:hover {
     color: #d41856;
     transition: 1s;

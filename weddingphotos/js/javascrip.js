@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     // GÓC TƯ VẤN
     $('#carousel-advisory-corner').owlCarousel({
-       loop: true,
+        loop: true,
         margin: 30,
         nav: false,
         autoplay: true,
@@ -36,10 +36,6 @@ $(document).ready(function() {
             0: {
                 items: 1
             },
-            400: {
-                items: 1
-            },
-            
             600: {
                 items: 2
             },
@@ -87,14 +83,6 @@ $(document).ready(function() {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '300');
     });
-
-
-
-
-
-
-
-
 
 
 
