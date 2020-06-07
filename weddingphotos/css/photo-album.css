@@ -1,0 +1,26 @@
+.card-packages-album {
+    padding-bottom: 1rem;
+}
+
+
+.card-packages-album:hover {
+    color: #d41856;
+    transition: 1s;
+}
+
+.img-packages-album {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-packages-album img {
+    width: 100%;
+    transition: 1s;
+}
+
+.img-packages-album img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: #d41856;
+}
