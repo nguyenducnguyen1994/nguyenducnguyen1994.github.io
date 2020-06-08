@@ -2,7 +2,10 @@ html {
     font-size: 100%;
 }
 
-
+a:hover{
+     color: #d41856 ;
+     transition: 1s;
+}
 
 .active-line {
     border-bottom: 2px solid #d41856 !important;
@@ -320,10 +323,15 @@ a .card-packages:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.box-button a{
+    color: #fff!important;
+    font-size: 15px;
+    line-height: 35px;
+}
 
 .btn-read-more {
     max-width: 110px;
-    height: 35px;
+    height: 30px;
     background-color: #d41856;
     border-radius: 5px;
     color: #fff;
@@ -332,13 +340,7 @@ a .card-packages:hover {
 
 }
 
-a .btn-read-more {
-    font-size: 15px;
-    line-height: 35px;
-}
-
 .btn-read-more:hover {
-    color: #fff;
     opacity: 0.8;
     transition: 1s ease-out;
 }
@@ -469,6 +471,7 @@ a .btn-read-more {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 25px;
+    text-decoration: none;
 }
 
 .phone-number,
