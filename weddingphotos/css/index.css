@@ -2,14 +2,11 @@ html {
     font-size: 100%;
 }
 
-a:hover{
-     color: #d41856 ;
-     transition: 1s;
+a:hover {
+    color: #d41856;
+    transition: 1s;
 }
 
-.active-line {
-    border-bottom: 2px solid #d41856 !important;
-}
 
 .link {
     text-decoration: none !important;
@@ -32,7 +29,7 @@ a:hover{
 }
 
 .breadcrumb {
-    background-color: #e9ecef00;
+    background-color: transparent;
     padding-left: 0px;
 }
 
@@ -57,7 +54,7 @@ a:hover{
 
 .wrap-container-fluid {
     background: linear-gradient(rgba(0, 143, 229, 0.02), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 143, 229, 0.02));
-        padding-bottom: 50px;
+    padding-bottom: 50px;
     box-shadow: 0px 2px 3px #CCC;
 }
 
@@ -77,14 +74,46 @@ a:hover{
 /* [2] NAVBAR */
 .navbar-nav {
     margin: 0 auto;
+}
+.active-line {
+    border-bottom: 2px solid #d41856;
+}
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
 
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #d41856;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
 }
 
 .navbar {
     padding: 0.5 1rem;
     box-shadow: 0px 2px 3px #CCC;
-
 }
 
 .navbar-nav .nav-item a {
@@ -136,7 +165,7 @@ a .card-packages:hover {
 .img-packages {
     border-radius: 50%;
     overflow: hidden;
-    border: solid 2px #d4185685;
+    border: 2px solid #d4185685;
     padding: 10px;
 }
 
@@ -288,9 +317,10 @@ a .card-packages:hover {
     background: #ffffff;
     border: 1px solid #ddd;
 }
+
 .card-advisory-corner:hover {
-   box-shadow: 0 2px 5px rgba(0,0,0,.18);
-   transition: 1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
+    transition: 1s;
 
 }
 
@@ -323,8 +353,9 @@ a .card-packages:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.box-button a{
-    color: #fff!important;
+
+.box-button a {
+    color: #fff !important;
     font-size: 15px;
     line-height: 35px;
 }
@@ -492,6 +523,12 @@ a .card-packages:hover {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 .bg-conten__footer {
@@ -857,11 +894,12 @@ a .card-packages:hover {
     .hotline-phone-ring {
         display: none;
     }
+
     .wrap-thongtin {
         padding-top: 0px;
         padding-bottom: 30px;
     }
-    
+
 }
 
 
@@ -880,9 +918,10 @@ a .card-packages:hover {
         background-color: #f8f9fa;
 
     }
+
     .wrap-container-fluid {
-    padding-bottom: 50px;
-}
+        padding-bottom: 50px;
+    }
 
     .carousel-caption {
         display: block;
@@ -899,7 +938,7 @@ a .card-packages:hover {
         display: none;
     }
 
-   
+
 
     .wrap-thongtin {
         padding-top: 0px;

@@ -203,30 +203,71 @@ h5.text {
 }
 
 
-.card-packages-sidebar {
-    padding-bottom: 20px;
-}
-
 .card-packages-sidebar:hover {
     color: #d41856;
     transition: 1s;
 }
 
 .img-packages-sidebar {
-    width: 100%;
     overflow: hidden;
-    transition: 1s;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-packages-sidebar img {
     width: 100%;
     transition: 1s;
+    border-radius: 5px;
 }
 
-.img-packages-sidebar img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+.card-packages-sidebar {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
+
+.img-packages-sidebar::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.img-packages-sidebar:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+
+
+
+
+
 
 /* Extra small devices (portrait phones, less than 320px) */
 @media (min-width: 320px) {
@@ -239,3 +280,4 @@ h5.text {
         padding-bottom: 30px;
     }
 }
+
