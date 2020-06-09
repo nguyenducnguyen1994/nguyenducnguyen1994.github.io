@@ -75,9 +75,11 @@ a:hover {
 .navbar-nav {
     margin: 0 auto;
 }
+
 .active-line {
     border-bottom: 2px solid #d41856;
 }
+
 .hvr-underline-from-left {
     display: inline-block;
     vertical-align: middle;
@@ -862,6 +864,9 @@ a .card-packages:hover {
 
 
 
+
+
+
 /* Extra small devices (portrait phones, less than 320px) */
 @media (min-width: 320px) {
     html {
@@ -935,9 +940,38 @@ a .card-packages:hover {
 
     .hotline-bar,
     .hotline-phone-ring {
-        display: none;
+        display: block;
     }
 
+    .hotline-bar {
+        position: absolute;
+        background: #d41856;
+        height: 2.5rem;
+        width: 11.25rem;
+        line-height: 40px;
+        border-radius: 3px;
+        padding: 0 10px;
+        background-size: 100%;
+        cursor: pointer;
+        transition: all 0.8s;
+        -webkit-transition: all 0.8s;
+        z-index: 9;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px !important;
+        left: 35px;
+        bottom: 33px;
+    }
+
+    .hotline-bar>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-indent: 40px;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
 
 
     .wrap-thongtin {
@@ -991,8 +1025,40 @@ a .card-packages:hover {
 
     .hotline-bar,
     .hotline-phone-ring {
-        display: none;
+        display: inline-block;
     }
+
+.hotline-bar {
+        position: absolute;
+        background: #d41856;
+        height: 2.5rem;
+        width: 11.25rem;
+        line-height: 40px;
+        border-radius: 3px;
+        padding: 0 10px;
+        background-size: 100%;
+        cursor: pointer;
+        transition: all 0.8s;
+        -webkit-transition: all 0.8s;
+        z-index: 9;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px !important;
+        left: 35px;
+        bottom: 43px;
+    }
+
+    .hotline-bar>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-indent: 35px;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+
+    
 
     .wrap-thongtin {
         padding-top: 16px;
@@ -1043,8 +1109,40 @@ a .card-packages:hover {
 
     .hotline-bar,
     .hotline-phone-ring {
-        display: none;
+        display: block;
     }
+
+
+    .hotline-bar {
+        position: absolute;
+        background: #d41856;
+        height: 2.5rem;
+        width: 11.25rem;
+        line-height: 40px;
+        border-radius: 3px;
+        padding: 0 10px;
+        background-size: 100%;
+        cursor: pointer;
+        transition: all 0.8s;
+        -webkit-transition: all 0.8s;
+        z-index: 9;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px !important;
+        left: 45px;
+        bottom: 33px;
+    }
+
+    .hotline-bar>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-indent: 40px;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+
 
     .wrap-thongtin {
         padding-top: 16px;
@@ -1096,7 +1194,36 @@ a .card-packages:hover {
 
     .hotline-bar,
     .hotline-phone-ring {
-        display: none;
+        display: inline-block;
+    }
+    .hotline-bar {
+        position: absolute;
+        background: #d41856;
+        height: 2.5rem;
+        width: 11.25rem;
+        line-height: 40px;
+        border-radius: 3px;
+        padding: 0 10px;
+        background-size: 100%;
+        cursor: pointer;
+        transition: all 0.8s;
+        -webkit-transition: all 0.8s;
+        z-index: 9;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px !important;
+        left: 45px;
+        bottom: 37px;
+    }
+
+    .hotline-bar>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-indent: 40px;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 40px;
     }
 
     .wrap-thongtin {

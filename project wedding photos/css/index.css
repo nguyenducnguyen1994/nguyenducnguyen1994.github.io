@@ -877,10 +877,7 @@ a:hover {
         margin-bottom: 0;
     }
 
-    .hotline-bar,
-    .hotline-phone-ring {
-        display: inline-block;
-    }
+    
 
     .gg-box {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -896,7 +893,10 @@ a:hover {
     .map {
         margin-bottom: 0px;
     }
-
+    .hotline-bar,
+    .hotline-phone-ring {
+        display: inline-block;
+    }
     .hotline-bar>a {
         text-indent: 35px;
         line-height: 35px;
@@ -934,6 +934,11 @@ a:hover {
     .map {
         margin-bottom: 0px;
     }
+    .hotline-bar,
+    .hotline-phone-ring {
+        display: block;
+    }
+
 
     .hotline-bar>a {
         text-indent: 45px;
