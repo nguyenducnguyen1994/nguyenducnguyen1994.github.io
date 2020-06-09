@@ -1,0 +1,25 @@
+.title__form {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #d41856;
+    border-color: #d41856;
+    transition: 1s;
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
+}
+
+.box-dangki,
+.box-map__contact {
+    padding-bottom: 50px;
+
+}
+.btn:focus{
+	box-shadow: none;
+}
