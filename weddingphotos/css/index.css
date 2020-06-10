@@ -487,12 +487,17 @@ a .card-packages:hover {
 }
 
 .phone-number a,
-.address a,
 .email a {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 25px;
     text-decoration: none;
+}
+.phone-number a:hover,
+.email a:hover{
+	color: #d41856;
+	transition: 1s;
+	opacity: 0.8;
 }
 
 .phone-number,
