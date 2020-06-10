@@ -10,9 +10,8 @@
 
 .list-packages {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
-    border-radius: 4px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius:0 0 0 5px;
     list-style: none;
     padding: 0;
     margin-bottom: 50px;
@@ -26,9 +25,10 @@
     cursor: pointer;
 }
 
-.list-packages li:hover {
+.list-packages li a:hover {
     background-color: #80808012;
     color: #d41856;
+    transition: 0.8s;
 }
 
 .title-big-content {

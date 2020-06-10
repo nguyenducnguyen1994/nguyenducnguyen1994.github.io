@@ -2,11 +2,6 @@ html {
     font-size: 100%;
 }
 
-a:hover {
-    color: #d41856;
-    transition: 1s;
-}
-
 
 .link {
     text-decoration: none !important;
@@ -52,12 +47,24 @@ a:hover {
     transition: 1s;
 }
 
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: none;
+}
+
 .wrap-container-fluid {
     background: linear-gradient(rgba(0, 143, 229, 0.02), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 143, 229, 0.02));
     padding-bottom: 50px;
     box-shadow: 0px 2px 3px #CCC;
 }
 
+.box-video{
+width: 100%;
+height: 350px;
+border: none;
+padding-bottom: 30px;
+}
 
 /****************** CSS HEADER ********************/
 /* [1] LOGO */
@@ -232,41 +239,22 @@ a .card-packages:hover {
 }
 
 
-.btn-center {
-    max-width: 120px;
-    height: 35px;
-    font-size: 0.9375rem;
-    margin: 0 auto;
-    background-color: #d41856;
-    border-radius: 5px;
-    line-height: 35px;
-    text-align: center;
-    cursor: pointer;
-}
 
-.btn-center a,
-.btn-left a {
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.8s;
-    color: #ffffff;
-}
 
 .btn-center:hover,
 .btn-left:hover {
     opacity: 0.8;
     transition: 1s;
+    color: #fff;
 }
 
 .btn-left {
-    max-width: 120px;
-    height: 35px;
+    padding: 0.5rem 0.75rem;
     cursor: pointer;
     font-size: 1rem;
     background-color: #d41856;
     color: #ffff;
-    border-radius: 5px;
-    line-height: 35px;
+    border-radius: 4px;
     text-align: center;
 }
 
@@ -555,6 +543,12 @@ a .card-packages:hover {
     font-size: 1rem;
     line-height: 30px;
     margin-bottom: 0;
+}
+
+.text__footer a:hover {
+    color: #d41856;
+    opacity: 0.8;
+    transition: 1s;
 }
 
 .quick-link__footer {
@@ -1028,7 +1022,7 @@ a .card-packages:hover {
         display: inline-block;
     }
 
-.hotline-bar {
+    .hotline-bar {
         position: absolute;
         background: #d41856;
         height: 2.5rem;
@@ -1058,7 +1052,7 @@ a .card-packages:hover {
         line-height: 35px;
     }
 
-    
+
 
     .wrap-thongtin {
         padding-top: 16px;
@@ -1196,6 +1190,7 @@ a .card-packages:hover {
     .hotline-phone-ring {
         display: inline-block;
     }
+
     .hotline-bar {
         position: absolute;
         background: #d41856;
