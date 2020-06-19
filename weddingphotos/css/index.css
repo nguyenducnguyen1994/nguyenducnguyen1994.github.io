@@ -899,6 +899,9 @@ a .card-packages:hover {
     .card-gift {
         margin-bottom: 1rem;
     }
+    .phone-number{
+    	padding-bottom: 1rem;
+    }
 
     .hotline-bar,
     .hotline-phone-ring {
@@ -927,6 +930,9 @@ a .card-packages:hover {
     .bg-navbar {
         background-color: #f8f9fa;
 
+    }
+    .phone-number{
+    	padding-bottom: 1rem;
     }
 
     .wrap-container-fluid {
@@ -1033,7 +1039,9 @@ a .card-packages:hover {
         padding-top: 0;
         display: block;
     }
-
+.phone-number{
+    	padding-bottom: 0;
+    }
     .hotline-bar,
     .hotline-phone-ring {
         display: inline-block;

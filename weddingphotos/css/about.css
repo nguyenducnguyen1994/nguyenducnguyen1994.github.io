@@ -15,7 +15,7 @@
 }
 
 .team-caption {
-    background: #222;
+   
     padding: 1em;
     position: absolute;
     left: 0px;
@@ -56,7 +56,9 @@ p.text {
 }
 
 h5.text {
+    font-size: 1.125rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .team-caption a i {
@@ -174,7 +176,7 @@ h5.text {
 .content-email-sidebar a,
 .content-add-sidebar a,
 .content-hotlie-sidebar a {
-    color: #d41856;
+    color: #000000;
 }
 
 .content-fanfage-sidebar a:hover,
@@ -183,6 +185,7 @@ h5.text {
 .content-hotlie-sidebar a:hover {
     opacity: 0.8;
     transition: 1s;
+     color: #d41856;
 }
 
 .title-sidebar h5 {
