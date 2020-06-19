@@ -59,23 +59,22 @@ html {
     box-shadow: 0px 2px 3px #CCC;
 }
 
-.box-video{
-width: 100%;
-height: 350px;
-border: none;
-padding-bottom: 30px;
+.box-video {
+    width: 100%;
+    height: 350px;
+    border: none;
+    padding-bottom: 30px;
 }
 
 /****************** CSS HEADER ********************/
 /* [1] LOGO */
-#header-logo {
-    padding: 10px 0;
-}
 
 .img-logo {
+
     max-width: 220px;
     height: auto;
     margin: 0 auto;
+    padding: 10px 0;
 }
 
 /* [2] NAVBAR */
@@ -151,8 +150,11 @@ button:focus {
 
 .carousel-caption a {
     color: #ffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
 }
-
 
 .carousel-item>img {
     width: 100%;
@@ -493,11 +495,12 @@ a .card-packages:hover {
     line-height: 25px;
     text-decoration: none;
 }
+
 .phone-number a:hover,
-.email a:hover{
-	color: #d41856;
-	transition: 1s;
-	opacity: 0.8;
+.email a:hover {
+    color: #d41856;
+    transition: 1s;
+    opacity: 0.8;
 }
 
 .phone-number,
@@ -872,7 +875,7 @@ a .card-packages:hover {
         font-size: 90%;
     }
 
-    #header-logo {
+    .img-logo {
         display: none;
     }
 
@@ -881,8 +884,11 @@ a .card-packages:hover {
 
     }
 
-    .carousel-caption {
-        display: none;
+    .carousel-caption a,
+    .carousel-caption p {
+        width: 200px;
+        font-size: 1rem;
+        margin: 0 auto;
     }
 
     .img-logo-info {
@@ -914,7 +920,7 @@ a .card-packages:hover {
         font-size: 95%;
     }
 
-    #header-logo {
+    .img-logo {
         display: none;
     }
 
@@ -927,8 +933,11 @@ a .card-packages:hover {
         padding-bottom: 50px;
     }
 
-    .carousel-caption {
-        display: block;
+    .carousel-caption a,
+    .carousel-caption p {
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 auto;
     }
 
     .img-logo-info {
@@ -987,7 +996,7 @@ a .card-packages:hover {
         font-size: 85%;
     }
 
-    #header-logo {
+    .img-logo {
         display: block;
     }
 
@@ -1013,8 +1022,11 @@ a .card-packages:hover {
         margin-right: 10px;
     }
 
-    .carousel-caption {
-        display: block;
+    .carousel-caption a,
+    .carousel-caption p {
+        width: 100%;
+        font-size: 1.25rem;
+        margin: 0 auto;
     }
 
     .img-logo-info {
@@ -1097,8 +1109,11 @@ a .card-packages:hover {
         margin-right: 20px;
     }
 
-    .carousel-caption {
-        display: block;
+    .carousel-caption a,
+    .carousel-caption p {
+        width: 100%;
+        font-size: 1.25rem;
+        margin: 0 auto;
     }
 
     .img-logo-info {
@@ -1171,7 +1186,7 @@ a .card-packages:hover {
 
     .navbar {
         padding: 0;
-        background: #ffff;
+        background: transparent;
     }
 
     .navbar-light .navbar-brand {

@@ -1,19 +1,19 @@
 $(document).ready(function() {
-// facebook
-window.fbAsyncInit = function () {
-    FB.init({
-        xfbml: true,
-        version: 'v7.0'
-    });
-};
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+    // facebook
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v7.0'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
 
     // ALBUM NỔI BẬT
@@ -27,10 +27,10 @@ window.fbAsyncInit = function () {
         autoplayHoverPause: true,
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
             1000: {
                 items: 4
@@ -74,7 +74,7 @@ window.fbAsyncInit = function () {
             0: {
                 items: 1
             },
-            
+
             600: {
                 items: 2
             },
