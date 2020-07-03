@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Icon favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-    <!-- Fontawesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="library/fontawesome/css/all.min.css">
     <!-- CSS bootrap -->
     <link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap.min.css">
-    <!-- Owl Carousel 2 -->
+    <!-- Owl Carousel -->
     <link rel="stylesheet" href="library/owlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="library/owlCarousel/dist/assets/owl.theme.default.css">
     <!-- Animate -->
@@ -242,7 +242,7 @@
             <div class="owl-carousel owl-theme wow animate__animated animate__fadeInLeft animate__delay-0.5s" id="carousel-featured-album">
                 <div class="item">
                     <a href="page/gallery-trung-van.html" class="link">
-                        <div class="card-packages">
+                        <div class="card-featured-albums">
                             <div class="img-packages">
                                 <img class="img-fluid pop" src="images/img-350x350/trung-van.jpg" alt="trungvan" title="Album Trung Vân">
                             </div>
@@ -252,7 +252,7 @@
                 </div>
                 <div class="item">
                     <a href="page/gallery-truong-van.html" class="link">
-                        <div class="card-packages">
+                        <div class="card-featured-albums">
                             <div class="img-packages">
                                 <img class="img-fluid pop" src="images/img-350x350/truongvan.jpg" alt="truongvan" title="Album Trường Vân">
                             </div>
@@ -262,7 +262,7 @@
                 </div>
                 <div class="item">
                     <a href="page/gallery-trung-van.html" class="link">
-                        <div class="card-packages">
+                        <div class="card-featured-albums">
                             <div class="img-packages">
                                 <img class="img-fluid pop" src="images/img-350x350/Concept-hoanghon.jpg" alt="ConceptHoàngHôn" title="Concept Hoàng Hôn">
                             </div>
@@ -272,7 +272,7 @@
                 </div>
                 <div class="item">
                     <a href="page/gallery-truong-van.html" class="link">
-                        <div class="card-packages">
+                        <div class="card-featured-albums">
                             <div class="img-packages">
                                 <img class="img-fluid pop" src="images/img-350x350/long-huyen.jpg" alt="longhuyen" title="Album Long Huyền">
                             </div>
@@ -280,9 +280,17 @@
                         </div>
                     </a>
                 </div>
+
+
+
+
+
+
+
+
                 <div class="item">
                     <a href="page/gallery-trung-van.html" class="link">
-                        <div class="card-packages">
+                        <div class="card-featured-albums">
                             <div class="img-packages">
                                 <img class="img-fluid pop" src="images/img-350x350/hoang-thao.jpg" alt="hoangthao" title="Album Hoàng Thảo">
                             </div>
@@ -550,23 +558,34 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="form-submit register-form wow animate__animated animate__fadeInRight">
-                        <h4 class="title-form-submit">Đăng ký tư vấn trực tiếp</h4>
+
+                    <form id="register-form" action="contactssuccess.html"
+                            class="form-submit register-form wow animate__animated animate__fadeInRight">
+                            <h4 class="title-form-submit">Đăng ký tư vấn trực tiếp</h4>
                         <p>Điền và gửi thông tin cá nhân để được tư vấn miễn phí về các gói chụp.</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Họ tên" required>
-                        </div>
-                        <div class="form-group ">
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Điện thoại" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="node" rows="3" required placeholder="Ghi chú"></textarea>
-                        </div>
-                        <a href="#" class="link btn-left">Đăng kí</a>
-                    </div>
+                            <input type="hidden" data-form-email="true">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" name="Tên Bạn "
+                                    placeholder="Nhập Tên*" data-form-field="Name"><small class="error"></small>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" name="Địa chỉ email "
+                                    placeholder="Nhập Email*" data-form-field="Email">
+                                <small class="error"></small>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="phone" type="tel" name="Số điện thoại "
+                                    placeholder="Nhập Phone*" data-form-field="Phone">
+                                <small class="error"></small>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="3" placeholder="Tin Nhắn*"></textarea>
+                            </div>
+                            <div>
+                                <input class="btn btn-left" type="submit" name="Tình Trạng " placeholder="GỬI"
+                                    value="Đăng kí">
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
@@ -630,11 +649,15 @@
                             chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ
                             email của bạn vào ô dưới đây.</p>
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" id="email-footer" placeholder="Email"  required>
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-paper-plane"></i></button>
+                                <button onclick="myFunction()" class="btn btn-outline-secondary" type="submit" id="button-add"><i class="fas fa-paper-plane"></i></button>
+                                <p id="demo"></p>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>

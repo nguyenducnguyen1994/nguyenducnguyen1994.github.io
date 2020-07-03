@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Icon favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.ico" />
-    <!-- Fontawesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
     <!-- CSS bootrap -->
     <link rel="stylesheet" type="text/css" href="../library/bootstrap/css/bootstrap.min.css">
@@ -32,7 +32,8 @@
         </div>
         <nav class="sticky-top navbar navbar-expand-md navbar-light bg-navbar ">
             <a class="navbar-brand" href="../index.html">WEDDING PHOTOS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,7 +54,8 @@
                         <a class="nav-link" href="../page/video.html">VIDEO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-left" href="../page/advisory-corner-page1.html">GÓC TƯ VẤN</a>
+                        <a class="nav-link hvr-underline-from-left" href="../page/advisory-corner-page1.html">GÓC TƯ
+                            VẤN</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active-line" href="../page/contact.html">LIÊN HỆ</a>
@@ -117,6 +119,13 @@
     </div>
     <!-- main -->
     <main>
+        <div class="pop-up-modal" style="display: none; opacity: 1;">
+            <div class="popup-send-feedback">
+                <p class="popup-content">Cảm ơn bạn đã góp ý, QTV Guitar Shop sẽ phản hồi với bạn trong thời gian sớm
+                    nhất.</p>
+                <div class="close-popup-button">OK</div>
+            </div>
+        </div>
         <div class="wrap-container-fluid">
             <div class="conten-main container">
                 <ol class="breadcrumb">
@@ -130,30 +139,37 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center ">
-                    <div class="col-sm-12 col-md-6  ">
-                        <form class="box-dangki wow animate__animated animate__fadeInLeft">
-                            <h5 class="title__form">FORM LIÊN HỆ</h5>
-                            <p>Điền và gửi thông tin cá nhân để được tư vấn miễn phí về các gói chụp.</p>
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="validationDefault01" placeholder="Họ tên" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Điện thoại" pattern="[0-9]{10}" required>
-                                </div>
+                    <div class="col-sm-12 col-md-6">
+                        <form id="register-form" action="contactssuccess.html"
+                            class="box-dangki wow animate__animated animate__fadeInLeft">
+                            <input type="hidden" data-form-email="true">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" name="Tên Bạn "
+                                    placeholder="Nhập Tên*" data-form-field="Name"><small class="error"></small>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <input class="form-control" id="email" type="email" name="Địa chỉ email "
+                                    placeholder="Nhập Email*" data-form-field="Email">
+                                <small class="error"></small>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required placeholder="Ghi chú"></textarea>
+                                <input class="form-control" id="phone" type="tel" name="Số điện thoại "
+                                    placeholder="Nhập Phone*" data-form-field="Phone">
+                                <small class="error"></small>
                             </div>
-                            <button type="submit" class="btn btn-submit ">Gửi liên hệ</button>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="3" placeholder="Tin Nhắn*"></textarea>
+                            </div>
+                            <div>
+                                <input class="btn btn-submit" type="submit" name="Tình Trạng " placeholder="GỬI"
+                                    value="Đăng kí">
+                            </div>
                         </form>
                     </div>
                     <div class="col-sm-12 col-md-6  ">
                         <div class="box-map__contact wow animate__animated animate__fadeInRight">
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8654738373557!2d105.79245041493213!3d20.99802898601506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba8ad197a5%3A0xa55e51322131e722!2zNDggUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1587132557028!5m2!1svi!2s"></iframe>
+                            <iframe class="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8654738373557!2d105.79245041493213!3d20.99802898601506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba8ad197a5%3A0xa55e51322131e722!2zNDggUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1587132557028!5m2!1svi!2s"></iframe>
                         </div>
                     </div>
                 </div>
@@ -167,34 +183,48 @@
                 <div class="col-sm-12 col-md-4">
                     <h5 class="title__footer">LIÊN KẾT NHANH</h5>
                     <ul class="quick-link__footer">
-                        <li class="text__footer"><a href="index.html" class="link">Trang chủ</a></li>
-                        <li class="text__footer"><a href="page/about.html" class="link">Giới thiệu</a></li>
-                        <li class="text__footer"><a href="page/service.html" class="link">Bảng giá</a></li>
-                        <li class="text__footer"><a href="page/photo-album-page1.html" class="link">Photo album</a></li>
-                        <li class="text__footer"><a href="page/video.html" class="link">Video</a></li>
-                        <li class="text__footer"><a href="page/advisory-corner-page1.html" class="link">Góc tư vấn</a></li>
-                        <li class="text__footer"><a href="page/contact.html" class="link">Liên hệ</a></li>
+                        <li class="text__footer"><a href="../index.html" class="link">Trang chủ</a></li>
+                        <li class="text__footer"><a href="../page/about.html" class="link">Giới thiệu</a></li>
+                        <li class="text__footer"><a href="../page/service.html" class="link">Bảng giá</a></li>
+                        <li class="text__footer"><a href="../page/photo-album-page1.html" class="link">Photo album</a>
+                        </li>
+                        <li class="text__footer"><a href="../page/video.html" class="link">Video</a></li>
+                        <li class="text__footer"><a href="../page/advisory-corner-page1.html" class="link">Góc tư
+                                vấn</a></li>
+                        <li class="text__footer"><a href="../page/contact.html" class="link">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="add__footer">
                         <h5 class="title__footer">WEDDING PHOTOS</h5>
-                        <p class="text__footer"><strong>Giờ mở cửa:</strong> Từ 8:30 - 21:30 tất cả các ngày trong tuần.</p>
-                        <p class="text__footer"><b>Địa Chỉ:</b><a href="https://goo.gl/maps/mTHGMD8Z44VfDtb99" class="link" target="_blank"> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</a></p>
-                        <p class="text__footer"><b>Hotline:</b> <a href="tel:024.6684.6619" class="link">024.6684.6619</a></p>
-                        <p class="text__footer"><b>Ms.Hạnh:</b><a href="tel:036.575.4558" class="link"> 036.575.4558</a></p>
+                        <p class="text__footer"><strong>Giờ mở cửa:</strong> Từ 8:30 - 21:30 tất cả các ngày trong tuần.
+                        </p>
+                        <p class="text__footer"><b>Địa Chỉ:</b><a href="https://goo.gl/maps/mTHGMD8Z44VfDtb99"
+                                class="link" target="_blank"> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn
+                                Lương kéo dài, Hà Nội</a></p>
+                        <p class="text__footer"><b>Hotline:</b> <a href="tel:024.6684.6619"
+                                class="link">024.6684.6619</a></p>
+                        <p class="text__footer"><b>Ms.Hạnh:</b><a href="tel:036.575.4558" class="link"> 036.575.4558</a>
+                        </p>
                         <div class="social__footer">
                             <div class="icon-email__footer">
-                                <a href="mailto:nguyenducnguyen.it.1994@gmail.com" target="_blank"><img src="../images/icon/email.png" alt="email" title="Facebook" class="img-fluid"></a>
+                                <a href="mailto:nguyenducnguyen.it.1994@gmail.com" target="_blank"><img
+                                        src="../images/icon/email.png" alt="email" title="Facebook"
+                                        class="img-fluid"></a>
                             </div>
                             <div class="icon-facebook__footer">
-                                <a href="https://www.facebook.com/weddingphotos.studio/" target="_blank"><img src="../images/icon/facebook.ico" alt="facebook.ico" title="Facebook" class="img-fluid"></a>
+                                <a href="https://www.facebook.com/weddingphotos.studio/" target="_blank"><img
+                                        src="../images/icon/facebook.ico" alt="facebook.ico" title="Facebook"
+                                        class="img-fluid"></a>
                             </div>
                             <div class="icon-youtobe__footer">
-                                <a href="https://www.youtube.com/" target="_blank"><img src="../images/icon/youtube.ico" alt="youtube.ico" title="Youtube" class="img-fluid"></a>
+                                <a href="https://www.youtube.com/" target="_blank"><img src="../images/icon/youtube.ico"
+                                        alt="youtube.ico" title="Youtube" class="img-fluid"></a>
                             </div>
                             <div class="icon-intagram__footer">
-                                <a href="https://www.instagram.com/?hl=vi" target="_blank"><img src="../images/icon/intagram.ico" alt="intagram.ico" title="Intagram" class="img-fluid"></a>
+                                <a href="https://www.instagram.com/?hl=vi" target="_blank"><img
+                                        src="../images/icon/intagram.ico" alt="intagram.ico" title="Intagram"
+                                        class="img-fluid"></a>
                             </div>
                         </div>
                     </div>
@@ -202,11 +232,14 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="receive-news__footer">
                         <h5 class="title__footer">ĐĂNG KÝ NHẬN TIN</h5>
-                        <p class="text__footer">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
+                        <p class="text__footer">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm
+                            chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ
+                            email của bạn vào ô dưới đây.</p>
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Email">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-paper-plane"></i></button>
+                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                        class="fas fa-paper-plane"></i></button>
                             </div>
                         </div>
                     </div>
@@ -235,17 +268,15 @@
     <div id="toTop" title="Về đầu trang"><i class="fas fa-angle-up"></i></div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="105265481158435" theme_color="#d41856" logged_in_greeting="Chào mùng bạn đến với Wedding Photos" logged_out_greeting="Chào mùng bạn đến với Wedding Photos">
+    <div class="fb-customerchat" attribution=setup_tool page_id="105265481158435" theme_color="#d41856"
+        logged_in_greeting="Chào mùng bạn đến với Wedding Photos"
+        logged_out_greeting="Chào mùng bạn đến với Wedding Photos">
     </div>
-    <!-- ADD JAVACRIPT -->
+    <!-- add javascrip -->
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../library/bootstrap/js/bootstrap.min.js"></script>
     <script src="../library/owlCarousel/dist/owl.carousel.min.js"></script>
     <script src="../library/wow/dist/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
     <script src="../js/javascrip.js"></script>
 </body>
 
