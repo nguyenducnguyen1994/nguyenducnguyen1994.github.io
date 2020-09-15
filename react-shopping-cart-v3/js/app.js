@@ -46,7 +46,7 @@ function App() {
     // Thêm phần tử vào mảng mới
     newProducts.push({
       id: 3,
-      name: "Laptop Asus VivoBook X409JA i3",
+      name: "Laptop Asus VivoBook X409JA i5",
       description: "Mô tả sản phẩm 3",
       image:
         "https://cdn.tgdd.vn/Products/Images/44/220526/asus-x409ja-i3-ek015t-220526-2-600x600.jpg",
