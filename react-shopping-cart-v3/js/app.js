@@ -62,10 +62,10 @@ function App() {
     setProducts(newProducts);
   }
 
-  function validate(value) {
-    let num = parseInt(value, 10);
-    if (num < 0 || num > 99) alert("Nhập giá trị 0~99");
-  }
+  // function validate(value) {
+  //   let num = parseInt(value, 10);
+  //   if (num < 0 || num > 99) alert("Nhập giá trị 0~99");
+  // }
 
   return (
     <main>
@@ -79,7 +79,6 @@ function App() {
         products={products}
         removeProduct={removeProduct}
         formatter={formatter}
-        validate={validate}
       />
 
       <CartFooter subTotal={subTotal} tax={tax} formatter={formatter} />

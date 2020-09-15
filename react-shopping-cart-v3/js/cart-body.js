@@ -23,7 +23,7 @@ function CartBody({ products, removeProduct, formatter, validate }) {
             step={1}
             defaultValue={product.quantity}
             id="validateQuanlity"
-            onKeyPress={this.validate}
+          
           />
         </div>
         <div className="remove">
