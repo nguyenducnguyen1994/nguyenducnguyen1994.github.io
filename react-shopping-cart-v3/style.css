@@ -308,7 +308,7 @@ header .count {
   }
 }
 
-/* --- MEDIUM & LARGE SCREEN --- */
+/* --- MEDIUM & LARGE SCREEN ----*/
 @media all and (min-width: 600px) {
   html {
     font-size: 14px;
