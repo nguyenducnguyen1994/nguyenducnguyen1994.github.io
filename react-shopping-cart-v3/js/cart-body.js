@@ -22,8 +22,6 @@ function CartBody({ products, removeProduct, formatter, validate }) {
             className="quantity"
             step={1}
             defaultValue={product.quantity}
-            id="validateQuanlity"
-          
           />
         </div>
         <div className="remove">

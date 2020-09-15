@@ -1,19 +1,21 @@
 const PRODUCTS = [
   {
-    id: 10,
-    name: "Iphone 12",
-    description: "Description 1",
-    image: "https://via.placeholder.com/200x150",
-    price: 12000,
+    id: 1,
+    name: "Laptop Acer Aspire 3 A315",
+    description: "Mô tả sẳn phẩm 1",
+    image:
+      "https://cdn.tgdd.vn/Products/Images/44/224582/TimerThumb/acer-aspire-3-a315-n5030-nxhe3sv00h.jpg",
+    price: 7490,
     quantity: 3,
   },
   {
-    id: 20,
-    name: "Laptop DELL",
-    description: "Description 2",
-    image: "https://via.placeholder.com/200x150",
+    id: 2,
+    name: "Laptop HP 348 G7 i3 8130U",
+    description: "Mô tả sản phẩm 2",
+    image:
+      "https://cdn.tgdd.vn/Products/Images/44/221511/hp-348-g7-i3-9pg83pa-030020-110045-600x600.jpg",
     price: 7000,
-    quantity: 11,
+    quantity: 5,
   },
 ];
 
@@ -44,10 +46,11 @@ function App() {
     // Thêm phần tử vào mảng mới
     newProducts.push({
       id: 3,
-      name: "Laptop DELL 3",
-      description: "Description 2",
-      image: "https://via.placeholder.com/200x150",
-      price: 500,
+      name: "Laptop Asus VivoBook X409JA i3",
+      description: "Mô tả sản phẩm 3",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/44/220526/asus-x409ja-i3-ek015t-220526-2-600x600.jpg",
+      price: 10990,
       quantity: 2,
     });
 
