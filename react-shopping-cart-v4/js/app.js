@@ -86,15 +86,18 @@ function App() {
   }
 
   function handleChangeQuantity(id, event) {
-    if (event.target.value.charAt(0) === "0") {
-      event.target.value = event.target.value.slice(1);
-    }
-    if (event.target.value > 100) event.target.value = 100;
-    typeof products;
     let newProducts = [...products];
-    let productIndex = newProducts.findIndex((obj) => obj.id == id);
-    newProducts[productIndex].quantity = Number(event.target.value);
-    setStateProduct(newProducts);
+    let console.log(productId, event.target.value);
+
+    // if (event.target.value.charAt(0) === "0") {
+    //   event.target.value = event.target.value.slice(1);
+    // }
+    // if (event.target.value > 100) event.target.value = 100;
+    // typeof products;
+
+    // let productIndex = newProducts.findIndex((obj) => obj.id == id);
+    // newProducts[productIndex].quantity = Number(event.target.value);
+    // // setStateProduct(newProducts);
 
     //TODO: Thay đổi số lượng sản phẩm
   }
@@ -119,6 +122,7 @@ function App() {
         isVisible={isShowModal}
         handleOk={removeProduct}
         handleCancel={() => setShowModal(false)}
+        getName={deleteProduct.name}
       />
 
       <CartFooter

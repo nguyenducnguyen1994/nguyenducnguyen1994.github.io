@@ -27,7 +27,7 @@ function CartBody({
             className="quantity"
             step={1}
             value={product.quantity}
-            onChange={(event) => handleChangeQuantity(product.id, event)}
+            onChange={(event) => handleChangeQuantity(product.name, event)}
           />
         </div>
         <div className="remove">
